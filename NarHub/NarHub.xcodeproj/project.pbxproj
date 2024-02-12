@@ -257,18 +257,6 @@
 		C5AAAFE32B7A121C00095E50 /* AccountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
 		C5AAAFE42B7A121C00095E50 /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		C5AAAFE52B7A121C00095E50 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		C5AAAFE82B7A121C00095E50 /* FreeSMSInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSInteractor.swift; sourceTree = "<group>"; };
-		C5AAAFE92B7A121C00095E50 /* FreeSMSRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSRouter.swift; sourceTree = "<group>"; };
-		C5AAAFEA2B7A121C00095E50 /* FreeSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSViewController.swift; sourceTree = "<group>"; };
-		C5AAAFEB2B7A121C00095E50 /* FreeSMSWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSWorker.swift; sourceTree = "<group>"; };
-		C5AAAFEC2B7A121C00095E50 /* FreeSMSPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSPresenter.swift; sourceTree = "<group>"; };
-		C5AAAFED2B7A121C00095E50 /* FreeSMSModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSModels.swift; sourceTree = "<group>"; };
-		C5AAAFEF2B7A121C00095E50 /* FreeSMSInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSInteractor.swift; sourceTree = "<group>"; };
-		C5AAAFF02B7A121C00095E50 /* FreeSMSRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSRouter.swift; sourceTree = "<group>"; };
-		C5AAAFF12B7A121C00095E50 /* FreeSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSViewController.swift; sourceTree = "<group>"; };
-		C5AAAFF22B7A121C00095E50 /* FreeSMSWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSWorker.swift; sourceTree = "<group>"; };
-		C5AAAFF32B7A121C00095E50 /* FreeSMSPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSPresenter.swift; sourceTree = "<group>"; };
-		C5AAAFF42B7A121C00095E50 /* FreeSMSModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSModels.swift; sourceTree = "<group>"; };
 		C5AAAFF52B7A121C00095E50 /* FreeSMSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSView.swift; sourceTree = "<group>"; };
 		C5AAAFF72B7A121C00095E50 /* FreeSMSViewController + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FreeSMSViewController + Extension.swift"; sourceTree = "<group>"; };
 		C5AAAFF82B7A121C00095E50 /* FreeSMSInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSInteractor.swift; sourceTree = "<group>"; };
@@ -683,8 +671,6 @@
 		C5AAAFE62B7A121C00095E50 /* FreeSMS */ = {
 			isa = PBXGroup;
 			children = (
-				C5AAAFE72B7A121C00095E50 /* UITableViewController */,
-				C5AAAFEE2B7A121C00095E50 /* UICollectionViewController */,
 				C5AAAFF52B7A121C00095E50 /* FreeSMSView.swift */,
 				C5AAAFF62B7A121C00095E50 /* Extensions */,
 				C5AAAFF82B7A121C00095E50 /* FreeSMSInteractor.swift */,
@@ -697,32 +683,6 @@
 				C5AAB0062B7A121C00095E50 /* FreeSMSModels.swift */,
 			);
 			path = FreeSMS;
-			sourceTree = "<group>";
-		};
-		C5AAAFE72B7A121C00095E50 /* UITableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C5AAAFE82B7A121C00095E50 /* FreeSMSInteractor.swift */,
-				C5AAAFE92B7A121C00095E50 /* FreeSMSRouter.swift */,
-				C5AAAFEA2B7A121C00095E50 /* FreeSMSViewController.swift */,
-				C5AAAFEB2B7A121C00095E50 /* FreeSMSWorker.swift */,
-				C5AAAFEC2B7A121C00095E50 /* FreeSMSPresenter.swift */,
-				C5AAAFED2B7A121C00095E50 /* FreeSMSModels.swift */,
-			);
-			path = UITableViewController;
-			sourceTree = "<group>";
-		};
-		C5AAAFEE2B7A121C00095E50 /* UICollectionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C5AAAFEF2B7A121C00095E50 /* FreeSMSInteractor.swift */,
-				C5AAAFF02B7A121C00095E50 /* FreeSMSRouter.swift */,
-				C5AAAFF12B7A121C00095E50 /* FreeSMSViewController.swift */,
-				C5AAAFF22B7A121C00095E50 /* FreeSMSWorker.swift */,
-				C5AAAFF32B7A121C00095E50 /* FreeSMSPresenter.swift */,
-				C5AAAFF42B7A121C00095E50 /* FreeSMSModels.swift */,
-			);
-			path = UICollectionViewController;
 			sourceTree = "<group>";
 		};
 		C5AAAFF62B7A121C00095E50 /* Extensions */ = {
