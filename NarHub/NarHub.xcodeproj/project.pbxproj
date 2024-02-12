@@ -99,22 +99,6 @@
 		C5AAB0662B7A121D00095E50 /* StoryProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD12B7A121C00095E50 /* StoryProgressBar.swift */; };
 		C5AAB0672B7A121D00095E50 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD22B7A121C00095E50 /* StoryViewController.swift */; };
 		C5AAB0682B7A121D00095E50 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD32B7A121C00095E50 /* StoryView.swift */; };
-		C5AAB0692B7A121D00095E50 /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD52B7A121C00095E50 /* SupportView.swift */; };
-		C5AAB06A2B7A121D00095E50 /* SupportConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD62B7A121C00095E50 /* SupportConfigurator.swift */; };
-		C5AAB06B2B7A121D00095E50 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD72B7A121C00095E50 /* SupportViewController.swift */; };
-		C5AAB06C2B7A121D00095E50 /* SupportModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD82B7A121C00095E50 /* SupportModels.swift */; };
-		C5AAB06D2B7A121D00095E50 /* SupportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD92B7A121C00095E50 /* SupportRouter.swift */; };
-		C5AAB06E2B7A121D00095E50 /* SupportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDA2B7A121C00095E50 /* SupportPresenter.swift */; };
-		C5AAB06F2B7A121D00095E50 /* SupportWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDB2B7A121C00095E50 /* SupportWorker.swift */; };
-		C5AAB0702B7A121D00095E50 /* SupportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDC2B7A121C00095E50 /* SupportInteractor.swift */; };
-		C5AAB0712B7A121D00095E50 /* AccountModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDE2B7A121C00095E50 /* AccountModels.swift */; };
-		C5AAB0722B7A121D00095E50 /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDF2B7A121C00095E50 /* AccountRouter.swift */; };
-		C5AAB0732B7A121D00095E50 /* AccountConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE02B7A121C00095E50 /* AccountConfigurator.swift */; };
-		C5AAB0742B7A121D00095E50 /* AccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE12B7A121C00095E50 /* AccountWorker.swift */; };
-		C5AAB0752B7A121D00095E50 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE22B7A121C00095E50 /* AccountInteractor.swift */; };
-		C5AAB0762B7A121D00095E50 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE32B7A121C00095E50 /* AccountPresenter.swift */; };
-		C5AAB0772B7A121D00095E50 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE42B7A121C00095E50 /* AccountView.swift */; };
-		C5AAB0782B7A121D00095E50 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE52B7A121C00095E50 /* AccountViewController.swift */; };
 		C5AAB0852B7A121D00095E50 /* FreeSMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFF52B7A121C00095E50 /* FreeSMSView.swift */; };
 		C5AAB0862B7A121D00095E50 /* FreeSMSViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFF72B7A121C00095E50 /* FreeSMSViewController + Extension.swift */; };
 		C5AAB0872B7A121D00095E50 /* FreeSMSInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFF82B7A121C00095E50 /* FreeSMSInteractor.swift */; };
@@ -128,12 +112,6 @@
 		C5AAB08F2B7A121D00095E50 /* DailySMSLimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0042B7A121C00095E50 /* DailySMSLimitView.swift */; };
 		C5AAB0902B7A121D00095E50 /* FreeSMSPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0052B7A121C00095E50 /* FreeSMSPresenter.swift */; };
 		C5AAB0912B7A121D00095E50 /* FreeSMSModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0062B7A121C00095E50 /* FreeSMSModels.swift */; };
-		C5AAB0922B7A121D00095E50 /* ServicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0082B7A121C00095E50 /* ServicesPresenter.swift */; };
-		C5AAB0942B7A121D00095E50 /* ServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00A2B7A121C00095E50 /* ServicesInteractor.swift */; };
-		C5AAB0952B7A121D00095E50 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00B2B7A121C00095E50 /* ServicesViewController.swift */; };
-		C5AAB0962B7A121D00095E50 /* ServicesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00C2B7A121C00095E50 /* ServicesModels.swift */; };
-		C5AAB0972B7A121D00095E50 /* ServicesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00D2B7A121C00095E50 /* ServicesRouter.swift */; };
-		C5AAB0982B7A121D00095E50 /* ServicesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00E2B7A121C00095E50 /* ServicesWorker.swift */; };
 		C5AAB0992B7A121D00095E50 /* LoadingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0102B7A121C00095E50 /* LoadingActivityIndicator.swift */; };
 		C5AAB09A2B7A121D00095E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AAB0122B7A121D00095E50 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -241,22 +219,6 @@
 		C5AAAFD12B7A121C00095E50 /* StoryProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryProgressBar.swift; sourceTree = "<group>"; };
 		C5AAAFD22B7A121C00095E50 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		C5AAAFD32B7A121C00095E50 /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
-		C5AAAFD52B7A121C00095E50 /* SupportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
-		C5AAAFD62B7A121C00095E50 /* SupportConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportConfigurator.swift; sourceTree = "<group>"; };
-		C5AAAFD72B7A121C00095E50 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
-		C5AAAFD82B7A121C00095E50 /* SupportModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportModels.swift; sourceTree = "<group>"; };
-		C5AAAFD92B7A121C00095E50 /* SupportRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportRouter.swift; sourceTree = "<group>"; };
-		C5AAAFDA2B7A121C00095E50 /* SupportPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportPresenter.swift; sourceTree = "<group>"; };
-		C5AAAFDB2B7A121C00095E50 /* SupportWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportWorker.swift; sourceTree = "<group>"; };
-		C5AAAFDC2B7A121C00095E50 /* SupportInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportInteractor.swift; sourceTree = "<group>"; };
-		C5AAAFDE2B7A121C00095E50 /* AccountModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModels.swift; sourceTree = "<group>"; };
-		C5AAAFDF2B7A121C00095E50 /* AccountRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
-		C5AAAFE02B7A121C00095E50 /* AccountConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountConfigurator.swift; sourceTree = "<group>"; };
-		C5AAAFE12B7A121C00095E50 /* AccountWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountWorker.swift; sourceTree = "<group>"; };
-		C5AAAFE22B7A121C00095E50 /* AccountInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
-		C5AAAFE32B7A121C00095E50 /* AccountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
-		C5AAAFE42B7A121C00095E50 /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		C5AAAFE52B7A121C00095E50 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		C5AAAFF52B7A121C00095E50 /* FreeSMSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSView.swift; sourceTree = "<group>"; };
 		C5AAAFF72B7A121C00095E50 /* FreeSMSViewController + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FreeSMSViewController + Extension.swift"; sourceTree = "<group>"; };
 		C5AAAFF82B7A121C00095E50 /* FreeSMSInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSInteractor.swift; sourceTree = "<group>"; };
@@ -270,13 +232,6 @@
 		C5AAB0042B7A121C00095E50 /* DailySMSLimitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySMSLimitView.swift; sourceTree = "<group>"; };
 		C5AAB0052B7A121C00095E50 /* FreeSMSPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSPresenter.swift; sourceTree = "<group>"; };
 		C5AAB0062B7A121C00095E50 /* FreeSMSModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSModels.swift; sourceTree = "<group>"; };
-		C5AAB0082B7A121C00095E50 /* ServicesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesPresenter.swift; sourceTree = "<group>"; };
-		C5AAB0092B7A121C00095E50 /* ServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
-		C5AAB00A2B7A121C00095E50 /* ServicesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesInteractor.swift; sourceTree = "<group>"; };
-		C5AAB00B2B7A121C00095E50 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
-		C5AAB00C2B7A121C00095E50 /* ServicesModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesModels.swift; sourceTree = "<group>"; };
-		C5AAB00D2B7A121C00095E50 /* ServicesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesRouter.swift; sourceTree = "<group>"; };
-		C5AAB00E2B7A121C00095E50 /* ServicesWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesWorker.swift; sourceTree = "<group>"; };
 		C5AAB0102B7A121C00095E50 /* LoadingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingActivityIndicator.swift; sourceTree = "<group>"; };
 		C5AAB0132B7A121D00095E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5AAB0142B7A121D00095E50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -420,10 +375,7 @@
 				C5AAAFA32B7A121C00095E50 /* TabBar */,
 				C5AAAFAF2B7A121C00095E50 /* VAS */,
 				C5AAAFBB2B7A121C00095E50 /* Dashboard */,
-				C5AAAFD42B7A121C00095E50 /* Support */,
-				C5AAAFDD2B7A121C00095E50 /* Account */,
 				C5AAAFE62B7A121C00095E50 /* FreeSMS */,
-				C5AAB0072B7A121C00095E50 /* Services */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -638,36 +590,6 @@
 			path = Story;
 			sourceTree = "<group>";
 		};
-		C5AAAFD42B7A121C00095E50 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				C5AAAFD52B7A121C00095E50 /* SupportView.swift */,
-				C5AAAFD62B7A121C00095E50 /* SupportConfigurator.swift */,
-				C5AAAFD72B7A121C00095E50 /* SupportViewController.swift */,
-				C5AAAFD82B7A121C00095E50 /* SupportModels.swift */,
-				C5AAAFD92B7A121C00095E50 /* SupportRouter.swift */,
-				C5AAAFDA2B7A121C00095E50 /* SupportPresenter.swift */,
-				C5AAAFDB2B7A121C00095E50 /* SupportWorker.swift */,
-				C5AAAFDC2B7A121C00095E50 /* SupportInteractor.swift */,
-			);
-			path = Support;
-			sourceTree = "<group>";
-		};
-		C5AAAFDD2B7A121C00095E50 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				C5AAAFDE2B7A121C00095E50 /* AccountModels.swift */,
-				C5AAAFDF2B7A121C00095E50 /* AccountRouter.swift */,
-				C5AAAFE02B7A121C00095E50 /* AccountConfigurator.swift */,
-				C5AAAFE12B7A121C00095E50 /* AccountWorker.swift */,
-				C5AAAFE22B7A121C00095E50 /* AccountInteractor.swift */,
-				C5AAAFE32B7A121C00095E50 /* AccountPresenter.swift */,
-				C5AAAFE42B7A121C00095E50 /* AccountView.swift */,
-				C5AAAFE52B7A121C00095E50 /* AccountViewController.swift */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
 		C5AAAFE62B7A121C00095E50 /* FreeSMS */ = {
 			isa = PBXGroup;
 			children = (
@@ -726,20 +648,6 @@
 				C5AAB0042B7A121C00095E50 /* DailySMSLimitView.swift */,
 			);
 			path = Custom;
-			sourceTree = "<group>";
-		};
-		C5AAB0072B7A121C00095E50 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				C5AAB0082B7A121C00095E50 /* ServicesPresenter.swift */,
-				C5AAB0092B7A121C00095E50 /* ServicesView.swift */,
-				C5AAB00A2B7A121C00095E50 /* ServicesInteractor.swift */,
-				C5AAB00B2B7A121C00095E50 /* ServicesViewController.swift */,
-				C5AAB00C2B7A121C00095E50 /* ServicesModels.swift */,
-				C5AAB00D2B7A121C00095E50 /* ServicesRouter.swift */,
-				C5AAB00E2B7A121C00095E50 /* ServicesWorker.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		C5AAB00F2B7A121C00095E50 /* Views */ = {
@@ -851,29 +759,21 @@
 				C5AAB08C2B7A121D00095E50 /* LargeFilledButton.swift in Sources */,
 				C5AAB02B2B7A121D00095E50 /* BalanceTransferWorker.swift in Sources */,
 				C5AAB02E2B7A121D00095E50 /* BalanceTransferConfigurator.swift in Sources */,
-				C5AAB0982B7A121D00095E50 /* ServicesWorker.swift in Sources */,
 				C5AAB0172B7A121D00095E50 /* DateFormatter.swift in Sources */,
 				C5AAB03B2B7A121D00095E50 /* SelectPhoneNumberView.swift in Sources */,
 				C5AAB0412B7A121D00095E50 /* UserContactsRouter.swift in Sources */,
-				C5AAB0732B7A121D00095E50 /* AccountConfigurator.swift in Sources */,
 				C5AAB02F2B7A121D00095E50 /* BalanceTransferInteractor.swift in Sources */,
 				C5AAB0152B7A121D00095E50 /* SceneDelegate.swift in Sources */,
-				C5AAB06D2B7A121D00095E50 /* SupportRouter.swift in Sources */,
-				C5AAB06C2B7A121D00095E50 /* SupportModels.swift in Sources */,
-				C5AAB0692B7A121D00095E50 /* SupportView.swift in Sources */,
 				C5AAB0472B7A121D00095E50 /* TabBarWorker.swift in Sources */,
 				C5AAB01C2B7A121D00095E50 /* View+Extension.swift in Sources */,
 				C5AAB0672B7A121D00095E50 /* StoryViewController.swift in Sources */,
 				C5AAB0552B7A121D00095E50 /* VASConfigurator.swift in Sources */,
 				C5AAB0192B7A121D00095E50 /* ImageResizer.swift in Sources */,
 				C5AAB0372B7A121D00095E50 /* UserContactsView.swift in Sources */,
-				C5AAB0942B7A121D00095E50 /* ServicesInteractor.swift in Sources */,
-				C5AAB0702B7A121D00095E50 /* SupportInteractor.swift in Sources */,
 				C5AAB03C2B7A121D00095E50 /* SelectPhoneNumberViewController.swift in Sources */,
 				C5AAB01B2B7A121D00095E50 /* TextFieldFormatter.swift in Sources */,
 				C5AAB0292B7A121D00095E50 /* ThemeableViewController.swift in Sources */,
 				C5AAB0912B7A121D00095E50 /* FreeSMSModels.swift in Sources */,
-				C5AAB0752B7A121D00095E50 /* AccountInteractor.swift in Sources */,
 				C5AAB0882B7A121D00095E50 /* FreeSMSConfigurator.swift in Sources */,
 				C5AAB0612B7A121D00095E50 /* ProductViewCell.swift in Sources */,
 				C5AAB0592B7A121D00095E50 /* DashboardPresenter.swift in Sources */,
@@ -882,14 +782,12 @@
 				C5AAB0652B7A121D00095E50 /* StoriesCollectionView.swift in Sources */,
 				C5AAB0522B7A121D00095E50 /* HiddenNumberUpdateProgressView.swift in Sources */,
 				C5AAB04F2B7A121D00095E50 /* VASWorker.swift in Sources */,
-				C5AAB0712B7A121D00095E50 /* AccountModels.swift in Sources */,
 				C5AAB0232B7A121D00095E50 /* AppAssets.swift in Sources */,
 				C5AAB0262B7A121D00095E50 /* MainNavigation.swift in Sources */,
 				C5AAB05D2B7A121D00095E50 /* DashboardViewController+Extension.swift in Sources */,
 				C5AAB0312B7A121D00095E50 /* TransferAmountCell.swift in Sources */,
 				C5AAB0532B7A121D00095E50 /* VASCardView.swift in Sources */,
 				C5AAB0642B7A121D00095E50 /* ServicesCollectionView.swift in Sources */,
-				C5AAB0922B7A121D00095E50 /* ServicesPresenter.swift in Sources */,
 				C5AAB0852B7A121D00095E50 /* FreeSMSView.swift in Sources */,
 				C5AAB0282B7A121D00095E50 /* ThemeableView.swift in Sources */,
 				C5AAB0362B7A121D00095E50 /* BalanceTransferViewController.swift in Sources */,
@@ -897,9 +795,6 @@
 				C5AAB05A2B7A121D00095E50 /* DashboardModels.swift in Sources */,
 				C5AAB04E2B7A121D00095E50 /* VASRouter.swift in Sources */,
 				C5AAB0582B7A121D00095E50 /* DashboardViewController.swift in Sources */,
-				C5AAB0742B7A121D00095E50 /* AccountWorker.swift in Sources */,
-				C5AAB06B2B7A121D00095E50 /* SupportViewController.swift in Sources */,
-				C5AAB06F2B7A121D00095E50 /* SupportWorker.swift in Sources */,
 				C5AAB0572B7A121D00095E50 /* DashboardInteractor.swift in Sources */,
 				C5AAB08D2B7A121D00095E50 /* MessageTextView.swift in Sources */,
 				C5AAB0892B7A121D00095E50 /* FreeSMSRouter.swift in Sources */,
@@ -921,16 +816,12 @@
 				C5AAB0622B7A121D00095E50 /* ServicesView.swift in Sources */,
 				C5AAB0452B7A121D00095E50 /* TabBarModels.swift in Sources */,
 				C5AAB0252B7A121D00095E50 /* ContactsManager.swift in Sources */,
-				C5AAB0762B7A121D00095E50 /* AccountPresenter.swift in Sources */,
-				C5AAB06A2B7A121D00095E50 /* SupportConfigurator.swift in Sources */,
 				C5AAB0432B7A121D00095E50 /* TabBarPresenter.swift in Sources */,
 				C5AAB01A2B7A121D00095E50 /* Cell+Configurer.swift in Sources */,
 				C5AAB05F2B7A121D00095E50 /* ServiceViewCell.swift in Sources */,
 				C5AAB04D2B7A121D00095E50 /* VASView.swift in Sources */,
 				C5AAB05E2B7A121D00095E50 /* DashboardConfigurator.swift in Sources */,
 				C5AAB0162B7A121D00095E50 /* DateCalculator.swift in Sources */,
-				C5AAB0962B7A121D00095E50 /* ServicesModels.swift in Sources */,
-				C5AAB0722B7A121D00095E50 /* AccountRouter.swift in Sources */,
 				C5AAB0332B7A121D00095E50 /* SelectTransferAmountView.swift in Sources */,
 				C5AAB0422B7A121D00095E50 /* UserContactsWorker.swift in Sources */,
 				C5AAB0862B7A121D00095E50 /* FreeSMSViewController + Extension.swift in Sources */,
@@ -946,22 +837,17 @@
 				C5AAB0502B7A121D00095E50 /* VASPresenter.swift in Sources */,
 				C5AAB0322B7A121D00095E50 /* TransferAmountButton.swift in Sources */,
 				C5AAB01E2B7A121D00095E50 /* AppRouter.swift in Sources */,
-				C5AAB0772B7A121D00095E50 /* AccountView.swift in Sources */,
 				C5AAB0442B7A121D00095E50 /* TabBarView.swift in Sources */,
 				C5AAB0302B7A121D00095E50 /* BalanceTransferPresenter.swift in Sources */,
 				C5AAB0902B7A121D00095E50 /* FreeSMSPresenter.swift in Sources */,
 				C5AAB0542B7A121D00095E50 /* VASInteractor.swift in Sources */,
-				C5AAB06E2B7A121D00095E50 /* SupportPresenter.swift in Sources */,
 				C5AAB08E2B7A121D00095E50 /* PhoneNumberTextFieldView.swift in Sources */,
 				C5AAB02C2B7A121D00095E50 /* BalanceTransferRouter.swift in Sources */,
 				C5AAB0492B7A121D00095E50 /* TabBarConfigurator.swift in Sources */,
-				C5AAB0952B7A121D00095E50 /* ServicesViewController.swift in Sources */,
 				C5AAB0992B7A121D00095E50 /* LoadingActivityIndicator.swift in Sources */,
 				C5AAB05C2B7A121D00095E50 /* DashboardRouter.swift in Sources */,
 				C5AAB0632B7A121D00095E50 /* ProductCollectionView.swift in Sources */,
 				C5AAB0182B7A121D00095E50 /* DoubleFormatter.swift in Sources */,
-				C5AAB0972B7A121D00095E50 /* ServicesRouter.swift in Sources */,
-				C5AAB0782B7A121D00095E50 /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
