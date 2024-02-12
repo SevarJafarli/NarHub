@@ -1,0 +1,1268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5AAAF4D2B7A0D6E00095E50 /* NarHubNetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AAAF4C2B7A0D6E00095E50 /* NarHubNetworkKit.framework */; };
+		C5AAAF4E2B7A0D6E00095E50 /* NarHubNetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5AAAF4C2B7A0D6E00095E50 /* NarHubNetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5AAAF512B7A0D7100095E50 /* NarHubUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AAAF502B7A0D7100095E50 /* NarHubUIKit.framework */; };
+		C5AAAF522B7A0D7100095E50 /* NarHubUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5AAAF502B7A0D7100095E50 /* NarHubUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5AAAF5C2B7A115300095E50 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF5B2B7A115300095E50 /* SDWebImage */; };
+		C5AAAF5E2B7A115300095E50 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF5D2B7A115300095E50 /* SDWebImageMapKit */; };
+		C5AAAF612B7A117300095E50 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF602B7A117300095E50 /* SnapKit */; };
+		C5AAAF642B7A11A600095E50 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF632B7A11A600095E50 /* FittedSheets */; };
+		C5AAB0152B7A121D00095E50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF652B7A121C00095E50 /* SceneDelegate.swift */; };
+		C5AAB0162B7A121D00095E50 /* DateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF672B7A121C00095E50 /* DateCalculator.swift */; };
+		C5AAB0172B7A121D00095E50 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF682B7A121C00095E50 /* DateFormatter.swift */; };
+		C5AAB0182B7A121D00095E50 /* DoubleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF692B7A121C00095E50 /* DoubleFormatter.swift */; };
+		C5AAB0192B7A121D00095E50 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF6A2B7A121C00095E50 /* ImageResizer.swift */; };
+		C5AAB01A2B7A121D00095E50 /* Cell+Configurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF6B2B7A121C00095E50 /* Cell+Configurer.swift */; };
+		C5AAB01B2B7A121D00095E50 /* TextFieldFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF6C2B7A121C00095E50 /* TextFieldFormatter.swift */; };
+		C5AAB01C2B7A121D00095E50 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF6D2B7A121C00095E50 /* View+Extension.swift */; };
+		C5AAB01D2B7A121D00095E50 /* PhoneNumberChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF6E2B7A121C00095E50 /* PhoneNumberChecker.swift */; };
+		C5AAB01E2B7A121D00095E50 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF702B7A121C00095E50 /* AppRouter.swift */; };
+		C5AAB01F2B7A121D00095E50 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF712B7A121C00095E50 /* AppContainer.swift */; };
+		C5AAB0202B7A121D00095E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF722B7A121C00095E50 /* AppDelegate.swift */; };
+		C5AAB0212B7A121D00095E50 /* StringFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF742B7A121C00095E50 /* StringFormats.swift */; };
+		C5AAB0222B7A121D00095E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AAAF752B7A121C00095E50 /* Assets.xcassets */; };
+		C5AAB0232B7A121D00095E50 /* AppAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF762B7A121C00095E50 /* AppAssets.swift */; };
+		C5AAB0242B7A121D00095E50 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF782B7A121C00095E50 /* LocalStorageManager.swift */; };
+		C5AAB0252B7A121D00095E50 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF792B7A121C00095E50 /* ContactsManager.swift */; };
+		C5AAB0262B7A121D00095E50 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF7C2B7A121C00095E50 /* MainNavigation.swift */; };
+		C5AAB0272B7A121D00095E50 /* ViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF7D2B7A121C00095E50 /* ViewController+Navigation.swift */; };
+		C5AAB0282B7A121D00095E50 /* ThemeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF7F2B7A121C00095E50 /* ThemeableView.swift */; };
+		C5AAB0292B7A121D00095E50 /* ThemeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF802B7A121C00095E50 /* ThemeableViewController.swift */; };
+		C5AAB02A2B7A121D00095E50 /* BalanceTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF832B7A121C00095E50 /* BalanceTransferView.swift */; };
+		C5AAB02B2B7A121D00095E50 /* BalanceTransferWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF842B7A121C00095E50 /* BalanceTransferWorker.swift */; };
+		C5AAB02C2B7A121D00095E50 /* BalanceTransferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF852B7A121C00095E50 /* BalanceTransferRouter.swift */; };
+		C5AAB02D2B7A121D00095E50 /* BalanceTransferModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF862B7A121C00095E50 /* BalanceTransferModels.swift */; };
+		C5AAB02E2B7A121D00095E50 /* BalanceTransferConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF872B7A121C00095E50 /* BalanceTransferConfigurator.swift */; };
+		C5AAB02F2B7A121D00095E50 /* BalanceTransferInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF882B7A121C00095E50 /* BalanceTransferInteractor.swift */; };
+		C5AAB0302B7A121D00095E50 /* BalanceTransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF892B7A121C00095E50 /* BalanceTransferPresenter.swift */; };
+		C5AAB0312B7A121D00095E50 /* TransferAmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF8C2B7A121C00095E50 /* TransferAmountCell.swift */; };
+		C5AAB0322B7A121D00095E50 /* TransferAmountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF8E2B7A121C00095E50 /* TransferAmountButton.swift */; };
+		C5AAB0332B7A121D00095E50 /* SelectTransferAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF8F2B7A121C00095E50 /* SelectTransferAmountView.swift */; };
+		C5AAB0342B7A121D00095E50 /* BalanceTransferInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF902B7A121C00095E50 /* BalanceTransferInfoView.swift */; };
+		C5AAB0352B7A121D00095E50 /* TransferAmountsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF922B7A121C00095E50 /* TransferAmountsCollectionView.swift */; };
+		C5AAB0362B7A121D00095E50 /* BalanceTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF932B7A121C00095E50 /* BalanceTransferViewController.swift */; };
+		C5AAB0372B7A121D00095E50 /* UserContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF952B7A121C00095E50 /* UserContactsView.swift */; };
+		C5AAB0382B7A121D00095E50 /* UserContactsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF962B7A121C00095E50 /* UserContactsConfigurator.swift */; };
+		C5AAB0392B7A121D00095E50 /* UserContactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF972B7A121C00095E50 /* UserContactsPresenter.swift */; };
+		C5AAB03A2B7A121D00095E50 /* PhoneNumberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF992B7A121C00095E50 /* PhoneNumberViewCell.swift */; };
+		C5AAB03B2B7A121D00095E50 /* SelectPhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF9A2B7A121C00095E50 /* SelectPhoneNumberView.swift */; };
+		C5AAB03C2B7A121D00095E50 /* SelectPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF9B2B7A121C00095E50 /* SelectPhoneNumberViewController.swift */; };
+		C5AAB03D2B7A121D00095E50 /* UserContactsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF9C2B7A121C00095E50 /* UserContactsInteractor.swift */; };
+		C5AAB03E2B7A121D00095E50 /* UserContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF9D2B7A121C00095E50 /* UserContactsViewController.swift */; };
+		C5AAB03F2B7A121D00095E50 /* UserContactsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF9E2B7A121C00095E50 /* UserContactsModels.swift */; };
+		C5AAB0402B7A121D00095E50 /* UserContactsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA02B7A121C00095E50 /* UserContactsViewCell.swift */; };
+		C5AAB0412B7A121D00095E50 /* UserContactsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA12B7A121C00095E50 /* UserContactsRouter.swift */; };
+		C5AAB0422B7A121D00095E50 /* UserContactsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA22B7A121C00095E50 /* UserContactsWorker.swift */; };
+		C5AAB0432B7A121D00095E50 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA42B7A121C00095E50 /* TabBarPresenter.swift */; };
+		C5AAB0442B7A121D00095E50 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA52B7A121C00095E50 /* TabBarView.swift */; };
+		C5AAB0452B7A121D00095E50 /* TabBarModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA62B7A121C00095E50 /* TabBarModels.swift */; };
+		C5AAB0462B7A121D00095E50 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA72B7A121C00095E50 /* TabBarRouter.swift */; };
+		C5AAB0472B7A121D00095E50 /* TabBarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA82B7A121C00095E50 /* TabBarWorker.swift */; };
+		C5AAB0482B7A121D00095E50 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA92B7A121C00095E50 /* TabBarViewController.swift */; };
+		C5AAB0492B7A121D00095E50 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFAA2B7A121C00095E50 /* TabBarConfigurator.swift */; };
+		C5AAB04A2B7A121D00095E50 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFAD2B7A121C00095E50 /* RoundedButton.swift */; };
+		C5AAB04B2B7A121D00095E50 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFAE2B7A121C00095E50 /* TabBarInteractor.swift */; };
+		C5AAB04C2B7A121D00095E50 /* VASModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB02B7A121C00095E50 /* VASModels.swift */; };
+		C5AAB04D2B7A121D00095E50 /* VASView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB12B7A121C00095E50 /* VASView.swift */; };
+		C5AAB04E2B7A121D00095E50 /* VASRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB22B7A121C00095E50 /* VASRouter.swift */; };
+		C5AAB04F2B7A121D00095E50 /* VASWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB32B7A121C00095E50 /* VASWorker.swift */; };
+		C5AAB0502B7A121D00095E50 /* VASPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB42B7A121C00095E50 /* VASPresenter.swift */; };
+		C5AAB0512B7A121D00095E50 /* VASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB52B7A121C00095E50 /* VASViewController.swift */; };
+		C5AAB0522B7A121D00095E50 /* HiddenNumberUpdateProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB72B7A121C00095E50 /* HiddenNumberUpdateProgressView.swift */; };
+		C5AAB0532B7A121D00095E50 /* VASCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB82B7A121C00095E50 /* VASCardView.swift */; };
+		C5AAB0542B7A121D00095E50 /* VASInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB92B7A121C00095E50 /* VASInteractor.swift */; };
+		C5AAB0552B7A121D00095E50 /* VASConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFBA2B7A121C00095E50 /* VASConfigurator.swift */; };
+		C5AAB0562B7A121D00095E50 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFBC2B7A121C00095E50 /* DashboardView.swift */; };
+		C5AAB0572B7A121D00095E50 /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFBD2B7A121C00095E50 /* DashboardInteractor.swift */; };
+		C5AAB0582B7A121D00095E50 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFBE2B7A121C00095E50 /* DashboardViewController.swift */; };
+		C5AAB0592B7A121D00095E50 /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFBF2B7A121C00095E50 /* DashboardPresenter.swift */; };
+		C5AAB05A2B7A121D00095E50 /* DashboardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFC02B7A121C00095E50 /* DashboardModels.swift */; };
+		C5AAB05B2B7A121D00095E50 /* DashboardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFC12B7A121C00095E50 /* DashboardWorker.swift */; };
+		C5AAB05C2B7A121D00095E50 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFC22B7A121C00095E50 /* DashboardRouter.swift */; };
+		C5AAB05D2B7A121D00095E50 /* DashboardViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFC42B7A121C00095E50 /* DashboardViewController+Extension.swift */; };
+		C5AAB05E2B7A121D00095E50 /* DashboardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFC52B7A121C00095E50 /* DashboardConfigurator.swift */; };
+		C5AAB05F2B7A121D00095E50 /* ServiceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFC82B7A121C00095E50 /* ServiceViewCell.swift */; };
+		C5AAB0602B7A121D00095E50 /* StoryCircleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFC92B7A121C00095E50 /* StoryCircleCollectionViewCell.swift */; };
+		C5AAB0612B7A121D00095E50 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFCA2B7A121C00095E50 /* ProductViewCell.swift */; };
+		C5AAB0622B7A121D00095E50 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFCB2B7A121C00095E50 /* ServicesView.swift */; };
+		C5AAB0632B7A121D00095E50 /* ProductCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFCD2B7A121C00095E50 /* ProductCollectionView.swift */; };
+		C5AAB0642B7A121D00095E50 /* ServicesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFCE2B7A121C00095E50 /* ServicesCollectionView.swift */; };
+		C5AAB0652B7A121D00095E50 /* StoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFCF2B7A121C00095E50 /* StoriesCollectionView.swift */; };
+		C5AAB0662B7A121D00095E50 /* StoryProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD12B7A121C00095E50 /* StoryProgressBar.swift */; };
+		C5AAB0672B7A121D00095E50 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD22B7A121C00095E50 /* StoryViewController.swift */; };
+		C5AAB0682B7A121D00095E50 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD32B7A121C00095E50 /* StoryView.swift */; };
+		C5AAB0692B7A121D00095E50 /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD52B7A121C00095E50 /* SupportView.swift */; };
+		C5AAB06A2B7A121D00095E50 /* SupportConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD62B7A121C00095E50 /* SupportConfigurator.swift */; };
+		C5AAB06B2B7A121D00095E50 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD72B7A121C00095E50 /* SupportViewController.swift */; };
+		C5AAB06C2B7A121D00095E50 /* SupportModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD82B7A121C00095E50 /* SupportModels.swift */; };
+		C5AAB06D2B7A121D00095E50 /* SupportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFD92B7A121C00095E50 /* SupportRouter.swift */; };
+		C5AAB06E2B7A121D00095E50 /* SupportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDA2B7A121C00095E50 /* SupportPresenter.swift */; };
+		C5AAB06F2B7A121D00095E50 /* SupportWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDB2B7A121C00095E50 /* SupportWorker.swift */; };
+		C5AAB0702B7A121D00095E50 /* SupportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDC2B7A121C00095E50 /* SupportInteractor.swift */; };
+		C5AAB0712B7A121D00095E50 /* AccountModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDE2B7A121C00095E50 /* AccountModels.swift */; };
+		C5AAB0722B7A121D00095E50 /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFDF2B7A121C00095E50 /* AccountRouter.swift */; };
+		C5AAB0732B7A121D00095E50 /* AccountConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE02B7A121C00095E50 /* AccountConfigurator.swift */; };
+		C5AAB0742B7A121D00095E50 /* AccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE12B7A121C00095E50 /* AccountWorker.swift */; };
+		C5AAB0752B7A121D00095E50 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE22B7A121C00095E50 /* AccountInteractor.swift */; };
+		C5AAB0762B7A121D00095E50 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE32B7A121C00095E50 /* AccountPresenter.swift */; };
+		C5AAB0772B7A121D00095E50 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE42B7A121C00095E50 /* AccountView.swift */; };
+		C5AAB0782B7A121D00095E50 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFE52B7A121C00095E50 /* AccountViewController.swift */; };
+		C5AAB0852B7A121D00095E50 /* FreeSMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFF52B7A121C00095E50 /* FreeSMSView.swift */; };
+		C5AAB0862B7A121D00095E50 /* FreeSMSViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFF72B7A121C00095E50 /* FreeSMSViewController + Extension.swift */; };
+		C5AAB0872B7A121D00095E50 /* FreeSMSInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFF82B7A121C00095E50 /* FreeSMSInteractor.swift */; };
+		C5AAB0882B7A121D00095E50 /* FreeSMSConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFF92B7A121C00095E50 /* FreeSMSConfigurator.swift */; };
+		C5AAB0892B7A121D00095E50 /* FreeSMSRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFFA2B7A121C00095E50 /* FreeSMSRouter.swift */; };
+		C5AAB08A2B7A121D00095E50 /* FreeSMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFFB2B7A121C00095E50 /* FreeSMSViewController.swift */; };
+		C5AAB08B2B7A121D00095E50 /* FreeSMSWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFFC2B7A121C00095E50 /* FreeSMSWorker.swift */; };
+		C5AAB08C2B7A121D00095E50 /* LargeFilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFFF2B7A121C00095E50 /* LargeFilledButton.swift */; };
+		C5AAB08D2B7A121D00095E50 /* MessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0012B7A121C00095E50 /* MessageTextView.swift */; };
+		C5AAB08E2B7A121D00095E50 /* PhoneNumberTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0022B7A121C00095E50 /* PhoneNumberTextFieldView.swift */; };
+		C5AAB08F2B7A121D00095E50 /* DailySMSLimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0042B7A121C00095E50 /* DailySMSLimitView.swift */; };
+		C5AAB0902B7A121D00095E50 /* FreeSMSPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0052B7A121C00095E50 /* FreeSMSPresenter.swift */; };
+		C5AAB0912B7A121D00095E50 /* FreeSMSModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0062B7A121C00095E50 /* FreeSMSModels.swift */; };
+		C5AAB0922B7A121D00095E50 /* ServicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0082B7A121C00095E50 /* ServicesPresenter.swift */; };
+		C5AAB0942B7A121D00095E50 /* ServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00A2B7A121C00095E50 /* ServicesInteractor.swift */; };
+		C5AAB0952B7A121D00095E50 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00B2B7A121C00095E50 /* ServicesViewController.swift */; };
+		C5AAB0962B7A121D00095E50 /* ServicesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00C2B7A121C00095E50 /* ServicesModels.swift */; };
+		C5AAB0972B7A121D00095E50 /* ServicesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00D2B7A121C00095E50 /* ServicesRouter.swift */; };
+		C5AAB0982B7A121D00095E50 /* ServicesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB00E2B7A121C00095E50 /* ServicesWorker.swift */; };
+		C5AAB0992B7A121D00095E50 /* LoadingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB0102B7A121C00095E50 /* LoadingActivityIndicator.swift */; };
+		C5AAB09A2B7A121D00095E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AAB0122B7A121D00095E50 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5AAAF4F2B7A0D6E00095E50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C5AAAF4E2B7A0D6E00095E50 /* NarHubNetworkKit.framework in Embed Frameworks */,
+				C5AAAF522B7A0D7100095E50 /* NarHubUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C5AAAD682B7A0BD200095E50 /* NarHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NarHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AAAF4C2B7A0D6E00095E50 /* NarHubNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NarHubNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AAAF502B7A0D7100095E50 /* NarHubUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NarHubUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AAAF652B7A121C00095E50 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C5AAAF672B7A121C00095E50 /* DateCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCalculator.swift; sourceTree = "<group>"; };
+		C5AAAF682B7A121C00095E50 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		C5AAAF692B7A121C00095E50 /* DoubleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleFormatter.swift; sourceTree = "<group>"; };
+		C5AAAF6A2B7A121C00095E50 /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		C5AAAF6B2B7A121C00095E50 /* Cell+Configurer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Configurer.swift"; sourceTree = "<group>"; };
+		C5AAAF6C2B7A121C00095E50 /* TextFieldFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldFormatter.swift; sourceTree = "<group>"; };
+		C5AAAF6D2B7A121C00095E50 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		C5AAAF6E2B7A121C00095E50 /* PhoneNumberChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberChecker.swift; sourceTree = "<group>"; };
+		C5AAAF702B7A121C00095E50 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		C5AAAF712B7A121C00095E50 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		C5AAAF722B7A121C00095E50 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5AAAF742B7A121C00095E50 /* StringFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormats.swift; sourceTree = "<group>"; };
+		C5AAAF752B7A121C00095E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5AAAF762B7A121C00095E50 /* AppAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssets.swift; sourceTree = "<group>"; };
+		C5AAAF782B7A121C00095E50 /* LocalStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		C5AAAF792B7A121C00095E50 /* ContactsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		C5AAAF7C2B7A121C00095E50 /* MainNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		C5AAAF7D2B7A121C00095E50 /* ViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Navigation.swift"; sourceTree = "<group>"; };
+		C5AAAF7F2B7A121C00095E50 /* ThemeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeableView.swift; sourceTree = "<group>"; };
+		C5AAAF802B7A121C00095E50 /* ThemeableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeableViewController.swift; sourceTree = "<group>"; };
+		C5AAAF832B7A121C00095E50 /* BalanceTransferView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferView.swift; sourceTree = "<group>"; };
+		C5AAAF842B7A121C00095E50 /* BalanceTransferWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferWorker.swift; sourceTree = "<group>"; };
+		C5AAAF852B7A121C00095E50 /* BalanceTransferRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferRouter.swift; sourceTree = "<group>"; };
+		C5AAAF862B7A121C00095E50 /* BalanceTransferModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferModels.swift; sourceTree = "<group>"; };
+		C5AAAF872B7A121C00095E50 /* BalanceTransferConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferConfigurator.swift; sourceTree = "<group>"; };
+		C5AAAF882B7A121C00095E50 /* BalanceTransferInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferInteractor.swift; sourceTree = "<group>"; };
+		C5AAAF892B7A121C00095E50 /* BalanceTransferPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferPresenter.swift; sourceTree = "<group>"; };
+		C5AAAF8C2B7A121C00095E50 /* TransferAmountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferAmountCell.swift; sourceTree = "<group>"; };
+		C5AAAF8E2B7A121C00095E50 /* TransferAmountButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferAmountButton.swift; sourceTree = "<group>"; };
+		C5AAAF8F2B7A121C00095E50 /* SelectTransferAmountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTransferAmountView.swift; sourceTree = "<group>"; };
+		C5AAAF902B7A121C00095E50 /* BalanceTransferInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferInfoView.swift; sourceTree = "<group>"; };
+		C5AAAF922B7A121C00095E50 /* TransferAmountsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferAmountsCollectionView.swift; sourceTree = "<group>"; };
+		C5AAAF932B7A121C00095E50 /* BalanceTransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferViewController.swift; sourceTree = "<group>"; };
+		C5AAAF952B7A121C00095E50 /* UserContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsView.swift; sourceTree = "<group>"; };
+		C5AAAF962B7A121C00095E50 /* UserContactsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsConfigurator.swift; sourceTree = "<group>"; };
+		C5AAAF972B7A121C00095E50 /* UserContactsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsPresenter.swift; sourceTree = "<group>"; };
+		C5AAAF992B7A121C00095E50 /* PhoneNumberViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewCell.swift; sourceTree = "<group>"; };
+		C5AAAF9A2B7A121C00095E50 /* SelectPhoneNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPhoneNumberView.swift; sourceTree = "<group>"; };
+		C5AAAF9B2B7A121C00095E50 /* SelectPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		C5AAAF9C2B7A121C00095E50 /* UserContactsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsInteractor.swift; sourceTree = "<group>"; };
+		C5AAAF9D2B7A121C00095E50 /* UserContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsViewController.swift; sourceTree = "<group>"; };
+		C5AAAF9E2B7A121C00095E50 /* UserContactsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsModels.swift; sourceTree = "<group>"; };
+		C5AAAFA02B7A121C00095E50 /* UserContactsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsViewCell.swift; sourceTree = "<group>"; };
+		C5AAAFA12B7A121C00095E50 /* UserContactsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsRouter.swift; sourceTree = "<group>"; };
+		C5AAAFA22B7A121C00095E50 /* UserContactsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserContactsWorker.swift; sourceTree = "<group>"; };
+		C5AAAFA42B7A121C00095E50 /* TabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		C5AAAFA52B7A121C00095E50 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C5AAAFA62B7A121C00095E50 /* TabBarModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModels.swift; sourceTree = "<group>"; };
+		C5AAAFA72B7A121C00095E50 /* TabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		C5AAAFA82B7A121C00095E50 /* TabBarWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarWorker.swift; sourceTree = "<group>"; };
+		C5AAAFA92B7A121C00095E50 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C5AAAFAA2B7A121C00095E50 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		C5AAAFAD2B7A121C00095E50 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		C5AAAFAE2B7A121C00095E50 /* TabBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		C5AAAFB02B7A121C00095E50 /* VASModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASModels.swift; sourceTree = "<group>"; };
+		C5AAAFB12B7A121C00095E50 /* VASView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASView.swift; sourceTree = "<group>"; };
+		C5AAAFB22B7A121C00095E50 /* VASRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASRouter.swift; sourceTree = "<group>"; };
+		C5AAAFB32B7A121C00095E50 /* VASWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASWorker.swift; sourceTree = "<group>"; };
+		C5AAAFB42B7A121C00095E50 /* VASPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASPresenter.swift; sourceTree = "<group>"; };
+		C5AAAFB52B7A121C00095E50 /* VASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASViewController.swift; sourceTree = "<group>"; };
+		C5AAAFB72B7A121C00095E50 /* HiddenNumberUpdateProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenNumberUpdateProgressView.swift; sourceTree = "<group>"; };
+		C5AAAFB82B7A121C00095E50 /* VASCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASCardView.swift; sourceTree = "<group>"; };
+		C5AAAFB92B7A121C00095E50 /* VASInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASInteractor.swift; sourceTree = "<group>"; };
+		C5AAAFBA2B7A121C00095E50 /* VASConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASConfigurator.swift; sourceTree = "<group>"; };
+		C5AAAFBC2B7A121C00095E50 /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C5AAAFBD2B7A121C00095E50 /* DashboardInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		C5AAAFBE2B7A121C00095E50 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C5AAAFBF2B7A121C00095E50 /* DashboardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		C5AAAFC02B7A121C00095E50 /* DashboardModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardModels.swift; sourceTree = "<group>"; };
+		C5AAAFC12B7A121C00095E50 /* DashboardWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardWorker.swift; sourceTree = "<group>"; };
+		C5AAAFC22B7A121C00095E50 /* DashboardRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		C5AAAFC42B7A121C00095E50 /* DashboardViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+Extension.swift"; sourceTree = "<group>"; };
+		C5AAAFC52B7A121C00095E50 /* DashboardConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardConfigurator.swift; sourceTree = "<group>"; };
+		C5AAAFC82B7A121C00095E50 /* ServiceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewCell.swift; sourceTree = "<group>"; };
+		C5AAAFC92B7A121C00095E50 /* StoryCircleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCircleCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5AAAFCA2B7A121C00095E50 /* ProductViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		C5AAAFCB2B7A121C00095E50 /* ServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		C5AAAFCD2B7A121C00095E50 /* ProductCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionView.swift; sourceTree = "<group>"; };
+		C5AAAFCE2B7A121C00095E50 /* ServicesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesCollectionView.swift; sourceTree = "<group>"; };
+		C5AAAFCF2B7A121C00095E50 /* StoriesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesCollectionView.swift; sourceTree = "<group>"; };
+		C5AAAFD12B7A121C00095E50 /* StoryProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryProgressBar.swift; sourceTree = "<group>"; };
+		C5AAAFD22B7A121C00095E50 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		C5AAAFD32B7A121C00095E50 /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		C5AAAFD52B7A121C00095E50 /* SupportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
+		C5AAAFD62B7A121C00095E50 /* SupportConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportConfigurator.swift; sourceTree = "<group>"; };
+		C5AAAFD72B7A121C00095E50 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		C5AAAFD82B7A121C00095E50 /* SupportModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportModels.swift; sourceTree = "<group>"; };
+		C5AAAFD92B7A121C00095E50 /* SupportRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportRouter.swift; sourceTree = "<group>"; };
+		C5AAAFDA2B7A121C00095E50 /* SupportPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportPresenter.swift; sourceTree = "<group>"; };
+		C5AAAFDB2B7A121C00095E50 /* SupportWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportWorker.swift; sourceTree = "<group>"; };
+		C5AAAFDC2B7A121C00095E50 /* SupportInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportInteractor.swift; sourceTree = "<group>"; };
+		C5AAAFDE2B7A121C00095E50 /* AccountModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModels.swift; sourceTree = "<group>"; };
+		C5AAAFDF2B7A121C00095E50 /* AccountRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
+		C5AAAFE02B7A121C00095E50 /* AccountConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountConfigurator.swift; sourceTree = "<group>"; };
+		C5AAAFE12B7A121C00095E50 /* AccountWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountWorker.swift; sourceTree = "<group>"; };
+		C5AAAFE22B7A121C00095E50 /* AccountInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
+		C5AAAFE32B7A121C00095E50 /* AccountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		C5AAAFE42B7A121C00095E50 /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		C5AAAFE52B7A121C00095E50 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		C5AAAFE82B7A121C00095E50 /* FreeSMSInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSInteractor.swift; sourceTree = "<group>"; };
+		C5AAAFE92B7A121C00095E50 /* FreeSMSRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSRouter.swift; sourceTree = "<group>"; };
+		C5AAAFEA2B7A121C00095E50 /* FreeSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSViewController.swift; sourceTree = "<group>"; };
+		C5AAAFEB2B7A121C00095E50 /* FreeSMSWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSWorker.swift; sourceTree = "<group>"; };
+		C5AAAFEC2B7A121C00095E50 /* FreeSMSPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSPresenter.swift; sourceTree = "<group>"; };
+		C5AAAFED2B7A121C00095E50 /* FreeSMSModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSModels.swift; sourceTree = "<group>"; };
+		C5AAAFEF2B7A121C00095E50 /* FreeSMSInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSInteractor.swift; sourceTree = "<group>"; };
+		C5AAAFF02B7A121C00095E50 /* FreeSMSRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSRouter.swift; sourceTree = "<group>"; };
+		C5AAAFF12B7A121C00095E50 /* FreeSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSViewController.swift; sourceTree = "<group>"; };
+		C5AAAFF22B7A121C00095E50 /* FreeSMSWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSWorker.swift; sourceTree = "<group>"; };
+		C5AAAFF32B7A121C00095E50 /* FreeSMSPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSPresenter.swift; sourceTree = "<group>"; };
+		C5AAAFF42B7A121C00095E50 /* FreeSMSModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSModels.swift; sourceTree = "<group>"; };
+		C5AAAFF52B7A121C00095E50 /* FreeSMSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSView.swift; sourceTree = "<group>"; };
+		C5AAAFF72B7A121C00095E50 /* FreeSMSViewController + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FreeSMSViewController + Extension.swift"; sourceTree = "<group>"; };
+		C5AAAFF82B7A121C00095E50 /* FreeSMSInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSInteractor.swift; sourceTree = "<group>"; };
+		C5AAAFF92B7A121C00095E50 /* FreeSMSConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSConfigurator.swift; sourceTree = "<group>"; };
+		C5AAAFFA2B7A121C00095E50 /* FreeSMSRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSRouter.swift; sourceTree = "<group>"; };
+		C5AAAFFB2B7A121C00095E50 /* FreeSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSViewController.swift; sourceTree = "<group>"; };
+		C5AAAFFC2B7A121C00095E50 /* FreeSMSWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSWorker.swift; sourceTree = "<group>"; };
+		C5AAAFFF2B7A121C00095E50 /* LargeFilledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeFilledButton.swift; sourceTree = "<group>"; };
+		C5AAB0012B7A121C00095E50 /* MessageTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTextView.swift; sourceTree = "<group>"; };
+		C5AAB0022B7A121C00095E50 /* PhoneNumberTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextFieldView.swift; sourceTree = "<group>"; };
+		C5AAB0042B7A121C00095E50 /* DailySMSLimitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySMSLimitView.swift; sourceTree = "<group>"; };
+		C5AAB0052B7A121C00095E50 /* FreeSMSPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSPresenter.swift; sourceTree = "<group>"; };
+		C5AAB0062B7A121C00095E50 /* FreeSMSModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSModels.swift; sourceTree = "<group>"; };
+		C5AAB0082B7A121C00095E50 /* ServicesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesPresenter.swift; sourceTree = "<group>"; };
+		C5AAB0092B7A121C00095E50 /* ServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		C5AAB00A2B7A121C00095E50 /* ServicesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesInteractor.swift; sourceTree = "<group>"; };
+		C5AAB00B2B7A121C00095E50 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		C5AAB00C2B7A121C00095E50 /* ServicesModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesModels.swift; sourceTree = "<group>"; };
+		C5AAB00D2B7A121C00095E50 /* ServicesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesRouter.swift; sourceTree = "<group>"; };
+		C5AAB00E2B7A121C00095E50 /* ServicesWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesWorker.swift; sourceTree = "<group>"; };
+		C5AAB0102B7A121C00095E50 /* LoadingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingActivityIndicator.swift; sourceTree = "<group>"; };
+		C5AAB0132B7A121D00095E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5AAB0142B7A121D00095E50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5AAAD652B7A0BD200095E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AAAF5C2B7A115300095E50 /* SDWebImage in Frameworks */,
+				C5AAAF4D2B7A0D6E00095E50 /* NarHubNetworkKit.framework in Frameworks */,
+				C5AAAF5E2B7A115300095E50 /* SDWebImageMapKit in Frameworks */,
+				C5AAAF512B7A0D7100095E50 /* NarHubUIKit.framework in Frameworks */,
+				C5AAAF642B7A11A600095E50 /* FittedSheets in Frameworks */,
+				C5AAAF612B7A117300095E50 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5AAAD5F2B7A0BD200095E50 = {
+			isa = PBXGroup;
+			children = (
+				C5AAAD6A2B7A0BD200095E50 /* NarHub */,
+				C5AAAD692B7A0BD200095E50 /* Products */,
+				C5AAAF4B2B7A0D6E00095E50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5AAAD692B7A0BD200095E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAD682B7A0BD200095E50 /* NarHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5AAAD6A2B7A0BD200095E50 /* NarHub */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF6F2B7A121C00095E50 /* App */,
+				C5AAAF662B7A121C00095E50 /* Extensions */,
+				C5AAAF7A2B7A121C00095E50 /* Helpers */,
+				C5AAAF772B7A121C00095E50 /* Managers */,
+				C5AAAF732B7A121C00095E50 /* Resources */,
+				C5AAAF652B7A121C00095E50 /* SceneDelegate.swift */,
+				C5AAAF812B7A121C00095E50 /* Scenes */,
+				C5AAB0112B7A121D00095E50 /* Supporting */,
+				C5AAB00F2B7A121C00095E50 /* Views */,
+			);
+			path = NarHub;
+			sourceTree = "<group>";
+		};
+		C5AAAF4B2B7A0D6E00095E50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF502B7A0D7100095E50 /* NarHubUIKit.framework */,
+				C5AAAF4C2B7A0D6E00095E50 /* NarHubNetworkKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5AAAF662B7A121C00095E50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF672B7A121C00095E50 /* DateCalculator.swift */,
+				C5AAAF682B7A121C00095E50 /* DateFormatter.swift */,
+				C5AAAF692B7A121C00095E50 /* DoubleFormatter.swift */,
+				C5AAAF6A2B7A121C00095E50 /* ImageResizer.swift */,
+				C5AAAF6B2B7A121C00095E50 /* Cell+Configurer.swift */,
+				C5AAAF6C2B7A121C00095E50 /* TextFieldFormatter.swift */,
+				C5AAAF6D2B7A121C00095E50 /* View+Extension.swift */,
+				C5AAAF6E2B7A121C00095E50 /* PhoneNumberChecker.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5AAAF6F2B7A121C00095E50 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF702B7A121C00095E50 /* AppRouter.swift */,
+				C5AAAF712B7A121C00095E50 /* AppContainer.swift */,
+				C5AAAF722B7A121C00095E50 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C5AAAF732B7A121C00095E50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF742B7A121C00095E50 /* StringFormats.swift */,
+				C5AAAF752B7A121C00095E50 /* Assets.xcassets */,
+				C5AAAF762B7A121C00095E50 /* AppAssets.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5AAAF772B7A121C00095E50 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF782B7A121C00095E50 /* LocalStorageManager.swift */,
+				C5AAAF792B7A121C00095E50 /* ContactsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C5AAAF7A2B7A121C00095E50 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF7B2B7A121C00095E50 /* Navigation */,
+				C5AAAF7E2B7A121C00095E50 /* Theme */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C5AAAF7B2B7A121C00095E50 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF7C2B7A121C00095E50 /* MainNavigation.swift */,
+				C5AAAF7D2B7A121C00095E50 /* ViewController+Navigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C5AAAF7E2B7A121C00095E50 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF7F2B7A121C00095E50 /* ThemeableView.swift */,
+				C5AAAF802B7A121C00095E50 /* ThemeableViewController.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C5AAAF812B7A121C00095E50 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF822B7A121C00095E50 /* BalanceTransfer */,
+				C5AAAF942B7A121C00095E50 /* Contacts */,
+				C5AAAFA32B7A121C00095E50 /* TabBar */,
+				C5AAAFAF2B7A121C00095E50 /* VAS */,
+				C5AAAFBB2B7A121C00095E50 /* Dashboard */,
+				C5AAAFD42B7A121C00095E50 /* Support */,
+				C5AAAFDD2B7A121C00095E50 /* Account */,
+				C5AAAFE62B7A121C00095E50 /* FreeSMS */,
+				C5AAB0072B7A121C00095E50 /* Services */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C5AAAF822B7A121C00095E50 /* BalanceTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF832B7A121C00095E50 /* BalanceTransferView.swift */,
+				C5AAAF842B7A121C00095E50 /* BalanceTransferWorker.swift */,
+				C5AAAF852B7A121C00095E50 /* BalanceTransferRouter.swift */,
+				C5AAAF862B7A121C00095E50 /* BalanceTransferModels.swift */,
+				C5AAAF872B7A121C00095E50 /* BalanceTransferConfigurator.swift */,
+				C5AAAF882B7A121C00095E50 /* BalanceTransferInteractor.swift */,
+				C5AAAF892B7A121C00095E50 /* BalanceTransferPresenter.swift */,
+				C5AAAF8A2B7A121C00095E50 /* Views */,
+				C5AAAF932B7A121C00095E50 /* BalanceTransferViewController.swift */,
+			);
+			path = BalanceTransfer;
+			sourceTree = "<group>";
+		};
+		C5AAAF8A2B7A121C00095E50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF8B2B7A121C00095E50 /* Cells */,
+				C5AAAF8D2B7A121C00095E50 /* Buttons */,
+				C5AAAF8F2B7A121C00095E50 /* SelectTransferAmountView.swift */,
+				C5AAAF902B7A121C00095E50 /* BalanceTransferInfoView.swift */,
+				C5AAAF912B7A121C00095E50 /* CollectionViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5AAAF8B2B7A121C00095E50 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF8C2B7A121C00095E50 /* TransferAmountCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C5AAAF8D2B7A121C00095E50 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF8E2B7A121C00095E50 /* TransferAmountButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C5AAAF912B7A121C00095E50 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF922B7A121C00095E50 /* TransferAmountsCollectionView.swift */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		C5AAAF942B7A121C00095E50 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF952B7A121C00095E50 /* UserContactsView.swift */,
+				C5AAAF962B7A121C00095E50 /* UserContactsConfigurator.swift */,
+				C5AAAF972B7A121C00095E50 /* UserContactsPresenter.swift */,
+				C5AAAF982B7A121C00095E50 /* SelectPhoneNumber */,
+				C5AAAF9C2B7A121C00095E50 /* UserContactsInteractor.swift */,
+				C5AAAF9D2B7A121C00095E50 /* UserContactsViewController.swift */,
+				C5AAAF9E2B7A121C00095E50 /* UserContactsModels.swift */,
+				C5AAAF9F2B7A121C00095E50 /* Views */,
+				C5AAAFA12B7A121C00095E50 /* UserContactsRouter.swift */,
+				C5AAAFA22B7A121C00095E50 /* UserContactsWorker.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		C5AAAF982B7A121C00095E50 /* SelectPhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAF992B7A121C00095E50 /* PhoneNumberViewCell.swift */,
+				C5AAAF9A2B7A121C00095E50 /* SelectPhoneNumberView.swift */,
+				C5AAAF9B2B7A121C00095E50 /* SelectPhoneNumberViewController.swift */,
+			);
+			path = SelectPhoneNumber;
+			sourceTree = "<group>";
+		};
+		C5AAAF9F2B7A121C00095E50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFA02B7A121C00095E50 /* UserContactsViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5AAAFA32B7A121C00095E50 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFA42B7A121C00095E50 /* TabBarPresenter.swift */,
+				C5AAAFA52B7A121C00095E50 /* TabBarView.swift */,
+				C5AAAFA62B7A121C00095E50 /* TabBarModels.swift */,
+				C5AAAFA72B7A121C00095E50 /* TabBarRouter.swift */,
+				C5AAAFA82B7A121C00095E50 /* TabBarWorker.swift */,
+				C5AAAFA92B7A121C00095E50 /* TabBarViewController.swift */,
+				C5AAAFAA2B7A121C00095E50 /* TabBarConfigurator.swift */,
+				C5AAAFAB2B7A121C00095E50 /* Views */,
+				C5AAAFAE2B7A121C00095E50 /* TabBarInteractor.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C5AAAFAB2B7A121C00095E50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFAC2B7A121C00095E50 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5AAAFAC2B7A121C00095E50 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFAD2B7A121C00095E50 /* RoundedButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C5AAAFAF2B7A121C00095E50 /* VAS */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFB02B7A121C00095E50 /* VASModels.swift */,
+				C5AAAFB12B7A121C00095E50 /* VASView.swift */,
+				C5AAAFB22B7A121C00095E50 /* VASRouter.swift */,
+				C5AAAFB32B7A121C00095E50 /* VASWorker.swift */,
+				C5AAAFB42B7A121C00095E50 /* VASPresenter.swift */,
+				C5AAAFB52B7A121C00095E50 /* VASViewController.swift */,
+				C5AAAFB62B7A121C00095E50 /* Views */,
+				C5AAAFB92B7A121C00095E50 /* VASInteractor.swift */,
+				C5AAAFBA2B7A121C00095E50 /* VASConfigurator.swift */,
+			);
+			path = VAS;
+			sourceTree = "<group>";
+		};
+		C5AAAFB62B7A121C00095E50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFB72B7A121C00095E50 /* HiddenNumberUpdateProgressView.swift */,
+				C5AAAFB82B7A121C00095E50 /* VASCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5AAAFBB2B7A121C00095E50 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFBC2B7A121C00095E50 /* DashboardView.swift */,
+				C5AAAFBD2B7A121C00095E50 /* DashboardInteractor.swift */,
+				C5AAAFBE2B7A121C00095E50 /* DashboardViewController.swift */,
+				C5AAAFBF2B7A121C00095E50 /* DashboardPresenter.swift */,
+				C5AAAFC02B7A121C00095E50 /* DashboardModels.swift */,
+				C5AAAFC12B7A121C00095E50 /* DashboardWorker.swift */,
+				C5AAAFC22B7A121C00095E50 /* DashboardRouter.swift */,
+				C5AAAFC32B7A121C00095E50 /* Extensions */,
+				C5AAAFC52B7A121C00095E50 /* DashboardConfigurator.swift */,
+				C5AAAFC62B7A121C00095E50 /* Views */,
+				C5AAAFD02B7A121C00095E50 /* Story */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		C5AAAFC32B7A121C00095E50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFC42B7A121C00095E50 /* DashboardViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5AAAFC62B7A121C00095E50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFC72B7A121C00095E50 /* Cells */,
+				C5AAAFCB2B7A121C00095E50 /* ServicesView.swift */,
+				C5AAAFCC2B7A121C00095E50 /* CollectionViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5AAAFC72B7A121C00095E50 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFC82B7A121C00095E50 /* ServiceViewCell.swift */,
+				C5AAAFC92B7A121C00095E50 /* StoryCircleCollectionViewCell.swift */,
+				C5AAAFCA2B7A121C00095E50 /* ProductViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C5AAAFCC2B7A121C00095E50 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFCD2B7A121C00095E50 /* ProductCollectionView.swift */,
+				C5AAAFCE2B7A121C00095E50 /* ServicesCollectionView.swift */,
+				C5AAAFCF2B7A121C00095E50 /* StoriesCollectionView.swift */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		C5AAAFD02B7A121C00095E50 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFD12B7A121C00095E50 /* StoryProgressBar.swift */,
+				C5AAAFD22B7A121C00095E50 /* StoryViewController.swift */,
+				C5AAAFD32B7A121C00095E50 /* StoryView.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		C5AAAFD42B7A121C00095E50 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFD52B7A121C00095E50 /* SupportView.swift */,
+				C5AAAFD62B7A121C00095E50 /* SupportConfigurator.swift */,
+				C5AAAFD72B7A121C00095E50 /* SupportViewController.swift */,
+				C5AAAFD82B7A121C00095E50 /* SupportModels.swift */,
+				C5AAAFD92B7A121C00095E50 /* SupportRouter.swift */,
+				C5AAAFDA2B7A121C00095E50 /* SupportPresenter.swift */,
+				C5AAAFDB2B7A121C00095E50 /* SupportWorker.swift */,
+				C5AAAFDC2B7A121C00095E50 /* SupportInteractor.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C5AAAFDD2B7A121C00095E50 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFDE2B7A121C00095E50 /* AccountModels.swift */,
+				C5AAAFDF2B7A121C00095E50 /* AccountRouter.swift */,
+				C5AAAFE02B7A121C00095E50 /* AccountConfigurator.swift */,
+				C5AAAFE12B7A121C00095E50 /* AccountWorker.swift */,
+				C5AAAFE22B7A121C00095E50 /* AccountInteractor.swift */,
+				C5AAAFE32B7A121C00095E50 /* AccountPresenter.swift */,
+				C5AAAFE42B7A121C00095E50 /* AccountView.swift */,
+				C5AAAFE52B7A121C00095E50 /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		C5AAAFE62B7A121C00095E50 /* FreeSMS */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFE72B7A121C00095E50 /* UITableViewController */,
+				C5AAAFEE2B7A121C00095E50 /* UICollectionViewController */,
+				C5AAAFF52B7A121C00095E50 /* FreeSMSView.swift */,
+				C5AAAFF62B7A121C00095E50 /* Extensions */,
+				C5AAAFF82B7A121C00095E50 /* FreeSMSInteractor.swift */,
+				C5AAAFF92B7A121C00095E50 /* FreeSMSConfigurator.swift */,
+				C5AAAFFA2B7A121C00095E50 /* FreeSMSRouter.swift */,
+				C5AAAFFB2B7A121C00095E50 /* FreeSMSViewController.swift */,
+				C5AAAFFC2B7A121C00095E50 /* FreeSMSWorker.swift */,
+				C5AAAFFD2B7A121C00095E50 /* Views */,
+				C5AAB0052B7A121C00095E50 /* FreeSMSPresenter.swift */,
+				C5AAB0062B7A121C00095E50 /* FreeSMSModels.swift */,
+			);
+			path = FreeSMS;
+			sourceTree = "<group>";
+		};
+		C5AAAFE72B7A121C00095E50 /* UITableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFE82B7A121C00095E50 /* FreeSMSInteractor.swift */,
+				C5AAAFE92B7A121C00095E50 /* FreeSMSRouter.swift */,
+				C5AAAFEA2B7A121C00095E50 /* FreeSMSViewController.swift */,
+				C5AAAFEB2B7A121C00095E50 /* FreeSMSWorker.swift */,
+				C5AAAFEC2B7A121C00095E50 /* FreeSMSPresenter.swift */,
+				C5AAAFED2B7A121C00095E50 /* FreeSMSModels.swift */,
+			);
+			path = UITableViewController;
+			sourceTree = "<group>";
+		};
+		C5AAAFEE2B7A121C00095E50 /* UICollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFEF2B7A121C00095E50 /* FreeSMSInteractor.swift */,
+				C5AAAFF02B7A121C00095E50 /* FreeSMSRouter.swift */,
+				C5AAAFF12B7A121C00095E50 /* FreeSMSViewController.swift */,
+				C5AAAFF22B7A121C00095E50 /* FreeSMSWorker.swift */,
+				C5AAAFF32B7A121C00095E50 /* FreeSMSPresenter.swift */,
+				C5AAAFF42B7A121C00095E50 /* FreeSMSModels.swift */,
+			);
+			path = UICollectionViewController;
+			sourceTree = "<group>";
+		};
+		C5AAAFF62B7A121C00095E50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFF72B7A121C00095E50 /* FreeSMSViewController + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5AAAFFD2B7A121C00095E50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFFE2B7A121C00095E50 /* Buttons */,
+				C5AAB0002B7A121C00095E50 /* TextFields */,
+				C5AAB0032B7A121C00095E50 /* Custom */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5AAAFFE2B7A121C00095E50 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAFFF2B7A121C00095E50 /* LargeFilledButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C5AAB0002B7A121C00095E50 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAB0012B7A121C00095E50 /* MessageTextView.swift */,
+				C5AAB0022B7A121C00095E50 /* PhoneNumberTextFieldView.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		C5AAB0032B7A121C00095E50 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAB0042B7A121C00095E50 /* DailySMSLimitView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C5AAB0072B7A121C00095E50 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAB0082B7A121C00095E50 /* ServicesPresenter.swift */,
+				C5AAB0092B7A121C00095E50 /* ServicesView.swift */,
+				C5AAB00A2B7A121C00095E50 /* ServicesInteractor.swift */,
+				C5AAB00B2B7A121C00095E50 /* ServicesViewController.swift */,
+				C5AAB00C2B7A121C00095E50 /* ServicesModels.swift */,
+				C5AAB00D2B7A121C00095E50 /* ServicesRouter.swift */,
+				C5AAB00E2B7A121C00095E50 /* ServicesWorker.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C5AAB00F2B7A121C00095E50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAB0102B7A121C00095E50 /* LoadingActivityIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5AAB0112B7A121D00095E50 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAB0122B7A121D00095E50 /* LaunchScreen.storyboard */,
+				C5AAB0142B7A121D00095E50 /* Info.plist */,
+			);
+			name = Supporting;
+			path = "../../../../Downloads/Nar_Hub-main/Nar_Hub/Supporting";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5AAAD672B7A0BD200095E50 /* NarHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5AAAD7C2B7A0BD300095E50 /* Build configuration list for PBXNativeTarget "NarHub" */;
+			buildPhases = (
+				C5AAAD642B7A0BD200095E50 /* Sources */,
+				C5AAAD652B7A0BD200095E50 /* Frameworks */,
+				C5AAAD662B7A0BD200095E50 /* Resources */,
+				C5AAAF4F2B7A0D6E00095E50 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NarHub;
+			packageProductDependencies = (
+				C5AAAF5B2B7A115300095E50 /* SDWebImage */,
+				C5AAAF5D2B7A115300095E50 /* SDWebImageMapKit */,
+				C5AAAF602B7A117300095E50 /* SnapKit */,
+				C5AAAF632B7A11A600095E50 /* FittedSheets */,
+			);
+			productName = NarHub;
+			productReference = C5AAAD682B7A0BD200095E50 /* NarHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5AAAD602B7A0BD200095E50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C5AAAD672B7A0BD200095E50 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = C5AAAD632B7A0BD200095E50 /* Build configuration list for PBXProject "NarHub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5AAAD5F2B7A0BD200095E50;
+			packageReferences = (
+				C5AAAF5A2B7A115300095E50 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				C5AAAF5F2B7A117300095E50 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C5AAAF622B7A11A600095E50 /* XCRemoteSwiftPackageReference "FittedSheets" */,
+			);
+			productRefGroup = C5AAAD692B7A0BD200095E50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5AAAD672B7A0BD200095E50 /* NarHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5AAAD662B7A0BD200095E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AAB0222B7A121D00095E50 /* Assets.xcassets in Resources */,
+				C5AAB09A2B7A121D00095E50 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5AAAD642B7A0BD200095E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AAB04C2B7A121D00095E50 /* VASModels.swift in Sources */,
+				C5AAB03D2B7A121D00095E50 /* UserContactsInteractor.swift in Sources */,
+				C5AAB05B2B7A121D00095E50 /* DashboardWorker.swift in Sources */,
+				C5AAB04A2B7A121D00095E50 /* RoundedButton.swift in Sources */,
+				C5AAB0202B7A121D00095E50 /* AppDelegate.swift in Sources */,
+				C5AAB08C2B7A121D00095E50 /* LargeFilledButton.swift in Sources */,
+				C5AAB02B2B7A121D00095E50 /* BalanceTransferWorker.swift in Sources */,
+				C5AAB02E2B7A121D00095E50 /* BalanceTransferConfigurator.swift in Sources */,
+				C5AAB0982B7A121D00095E50 /* ServicesWorker.swift in Sources */,
+				C5AAB0172B7A121D00095E50 /* DateFormatter.swift in Sources */,
+				C5AAB03B2B7A121D00095E50 /* SelectPhoneNumberView.swift in Sources */,
+				C5AAB0412B7A121D00095E50 /* UserContactsRouter.swift in Sources */,
+				C5AAB0732B7A121D00095E50 /* AccountConfigurator.swift in Sources */,
+				C5AAB02F2B7A121D00095E50 /* BalanceTransferInteractor.swift in Sources */,
+				C5AAB0152B7A121D00095E50 /* SceneDelegate.swift in Sources */,
+				C5AAB06D2B7A121D00095E50 /* SupportRouter.swift in Sources */,
+				C5AAB06C2B7A121D00095E50 /* SupportModels.swift in Sources */,
+				C5AAB0692B7A121D00095E50 /* SupportView.swift in Sources */,
+				C5AAB0472B7A121D00095E50 /* TabBarWorker.swift in Sources */,
+				C5AAB01C2B7A121D00095E50 /* View+Extension.swift in Sources */,
+				C5AAB0672B7A121D00095E50 /* StoryViewController.swift in Sources */,
+				C5AAB0552B7A121D00095E50 /* VASConfigurator.swift in Sources */,
+				C5AAB0192B7A121D00095E50 /* ImageResizer.swift in Sources */,
+				C5AAB0372B7A121D00095E50 /* UserContactsView.swift in Sources */,
+				C5AAB0942B7A121D00095E50 /* ServicesInteractor.swift in Sources */,
+				C5AAB0702B7A121D00095E50 /* SupportInteractor.swift in Sources */,
+				C5AAB03C2B7A121D00095E50 /* SelectPhoneNumberViewController.swift in Sources */,
+				C5AAB01B2B7A121D00095E50 /* TextFieldFormatter.swift in Sources */,
+				C5AAB0292B7A121D00095E50 /* ThemeableViewController.swift in Sources */,
+				C5AAB0912B7A121D00095E50 /* FreeSMSModels.swift in Sources */,
+				C5AAB0752B7A121D00095E50 /* AccountInteractor.swift in Sources */,
+				C5AAB0882B7A121D00095E50 /* FreeSMSConfigurator.swift in Sources */,
+				C5AAB0612B7A121D00095E50 /* ProductViewCell.swift in Sources */,
+				C5AAB0592B7A121D00095E50 /* DashboardPresenter.swift in Sources */,
+				C5AAB0662B7A121D00095E50 /* StoryProgressBar.swift in Sources */,
+				C5AAB0872B7A121D00095E50 /* FreeSMSInteractor.swift in Sources */,
+				C5AAB0652B7A121D00095E50 /* StoriesCollectionView.swift in Sources */,
+				C5AAB0522B7A121D00095E50 /* HiddenNumberUpdateProgressView.swift in Sources */,
+				C5AAB04F2B7A121D00095E50 /* VASWorker.swift in Sources */,
+				C5AAB0712B7A121D00095E50 /* AccountModels.swift in Sources */,
+				C5AAB0232B7A121D00095E50 /* AppAssets.swift in Sources */,
+				C5AAB0262B7A121D00095E50 /* MainNavigation.swift in Sources */,
+				C5AAB05D2B7A121D00095E50 /* DashboardViewController+Extension.swift in Sources */,
+				C5AAB0312B7A121D00095E50 /* TransferAmountCell.swift in Sources */,
+				C5AAB0532B7A121D00095E50 /* VASCardView.swift in Sources */,
+				C5AAB0642B7A121D00095E50 /* ServicesCollectionView.swift in Sources */,
+				C5AAB0922B7A121D00095E50 /* ServicesPresenter.swift in Sources */,
+				C5AAB0852B7A121D00095E50 /* FreeSMSView.swift in Sources */,
+				C5AAB0282B7A121D00095E50 /* ThemeableView.swift in Sources */,
+				C5AAB0362B7A121D00095E50 /* BalanceTransferViewController.swift in Sources */,
+				C5AAB0392B7A121D00095E50 /* UserContactsPresenter.swift in Sources */,
+				C5AAB05A2B7A121D00095E50 /* DashboardModels.swift in Sources */,
+				C5AAB04E2B7A121D00095E50 /* VASRouter.swift in Sources */,
+				C5AAB0582B7A121D00095E50 /* DashboardViewController.swift in Sources */,
+				C5AAB0742B7A121D00095E50 /* AccountWorker.swift in Sources */,
+				C5AAB06B2B7A121D00095E50 /* SupportViewController.swift in Sources */,
+				C5AAB06F2B7A121D00095E50 /* SupportWorker.swift in Sources */,
+				C5AAB0572B7A121D00095E50 /* DashboardInteractor.swift in Sources */,
+				C5AAB08D2B7A121D00095E50 /* MessageTextView.swift in Sources */,
+				C5AAB0892B7A121D00095E50 /* FreeSMSRouter.swift in Sources */,
+				C5AAB0272B7A121D00095E50 /* ViewController+Navigation.swift in Sources */,
+				C5AAB0512B7A121D00095E50 /* VASViewController.swift in Sources */,
+				C5AAB0342B7A121D00095E50 /* BalanceTransferInfoView.swift in Sources */,
+				C5AAB0402B7A121D00095E50 /* UserContactsViewCell.swift in Sources */,
+				C5AAB04B2B7A121D00095E50 /* TabBarInteractor.swift in Sources */,
+				C5AAB01D2B7A121D00095E50 /* PhoneNumberChecker.swift in Sources */,
+				C5AAB08B2B7A121D00095E50 /* FreeSMSWorker.swift in Sources */,
+				C5AAB02D2B7A121D00095E50 /* BalanceTransferModels.swift in Sources */,
+				C5AAB0602B7A121D00095E50 /* StoryCircleCollectionViewCell.swift in Sources */,
+				C5AAB02A2B7A121D00095E50 /* BalanceTransferView.swift in Sources */,
+				C5AAB0562B7A121D00095E50 /* DashboardView.swift in Sources */,
+				C5AAB01F2B7A121D00095E50 /* AppContainer.swift in Sources */,
+				C5AAB0212B7A121D00095E50 /* StringFormats.swift in Sources */,
+				C5AAB08F2B7A121D00095E50 /* DailySMSLimitView.swift in Sources */,
+				C5AAB08A2B7A121D00095E50 /* FreeSMSViewController.swift in Sources */,
+				C5AAB0622B7A121D00095E50 /* ServicesView.swift in Sources */,
+				C5AAB0452B7A121D00095E50 /* TabBarModels.swift in Sources */,
+				C5AAB0252B7A121D00095E50 /* ContactsManager.swift in Sources */,
+				C5AAB0762B7A121D00095E50 /* AccountPresenter.swift in Sources */,
+				C5AAB06A2B7A121D00095E50 /* SupportConfigurator.swift in Sources */,
+				C5AAB0432B7A121D00095E50 /* TabBarPresenter.swift in Sources */,
+				C5AAB01A2B7A121D00095E50 /* Cell+Configurer.swift in Sources */,
+				C5AAB05F2B7A121D00095E50 /* ServiceViewCell.swift in Sources */,
+				C5AAB04D2B7A121D00095E50 /* VASView.swift in Sources */,
+				C5AAB05E2B7A121D00095E50 /* DashboardConfigurator.swift in Sources */,
+				C5AAB0162B7A121D00095E50 /* DateCalculator.swift in Sources */,
+				C5AAB0962B7A121D00095E50 /* ServicesModels.swift in Sources */,
+				C5AAB0722B7A121D00095E50 /* AccountRouter.swift in Sources */,
+				C5AAB0332B7A121D00095E50 /* SelectTransferAmountView.swift in Sources */,
+				C5AAB0422B7A121D00095E50 /* UserContactsWorker.swift in Sources */,
+				C5AAB0862B7A121D00095E50 /* FreeSMSViewController + Extension.swift in Sources */,
+				C5AAB0682B7A121D00095E50 /* StoryView.swift in Sources */,
+				C5AAB03E2B7A121D00095E50 /* UserContactsViewController.swift in Sources */,
+				C5AAB0352B7A121D00095E50 /* TransferAmountsCollectionView.swift in Sources */,
+				C5AAB03F2B7A121D00095E50 /* UserContactsModels.swift in Sources */,
+				C5AAB0382B7A121D00095E50 /* UserContactsConfigurator.swift in Sources */,
+				C5AAB03A2B7A121D00095E50 /* PhoneNumberViewCell.swift in Sources */,
+				C5AAB0242B7A121D00095E50 /* LocalStorageManager.swift in Sources */,
+				C5AAB0482B7A121D00095E50 /* TabBarViewController.swift in Sources */,
+				C5AAB0462B7A121D00095E50 /* TabBarRouter.swift in Sources */,
+				C5AAB0502B7A121D00095E50 /* VASPresenter.swift in Sources */,
+				C5AAB0322B7A121D00095E50 /* TransferAmountButton.swift in Sources */,
+				C5AAB01E2B7A121D00095E50 /* AppRouter.swift in Sources */,
+				C5AAB0772B7A121D00095E50 /* AccountView.swift in Sources */,
+				C5AAB0442B7A121D00095E50 /* TabBarView.swift in Sources */,
+				C5AAB0302B7A121D00095E50 /* BalanceTransferPresenter.swift in Sources */,
+				C5AAB0902B7A121D00095E50 /* FreeSMSPresenter.swift in Sources */,
+				C5AAB0542B7A121D00095E50 /* VASInteractor.swift in Sources */,
+				C5AAB06E2B7A121D00095E50 /* SupportPresenter.swift in Sources */,
+				C5AAB08E2B7A121D00095E50 /* PhoneNumberTextFieldView.swift in Sources */,
+				C5AAB02C2B7A121D00095E50 /* BalanceTransferRouter.swift in Sources */,
+				C5AAB0492B7A121D00095E50 /* TabBarConfigurator.swift in Sources */,
+				C5AAB0952B7A121D00095E50 /* ServicesViewController.swift in Sources */,
+				C5AAB0992B7A121D00095E50 /* LoadingActivityIndicator.swift in Sources */,
+				C5AAB05C2B7A121D00095E50 /* DashboardRouter.swift in Sources */,
+				C5AAB0632B7A121D00095E50 /* ProductCollectionView.swift in Sources */,
+				C5AAB0182B7A121D00095E50 /* DoubleFormatter.swift in Sources */,
+				C5AAB0972B7A121D00095E50 /* ServicesRouter.swift in Sources */,
+				C5AAB0782B7A121D00095E50 /* AccountViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5AAB0122B7A121D00095E50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5AAB0132B7A121D00095E50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5AAAD7A2B7A0BD300095E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5AAAD7B2B7A0BD300095E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5AAAD7D2B7A0BD300095E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NarHub/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NarHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5AAAD7E2B7A0BD300095E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NarHub/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NarHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5AAAD632B7A0BD200095E50 /* Build configuration list for PBXProject "NarHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AAAD7A2B7A0BD300095E50 /* Debug */,
+				C5AAAD7B2B7A0BD300095E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5AAAD7C2B7A0BD300095E50 /* Build configuration list for PBXNativeTarget "NarHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AAAD7D2B7A0BD300095E50 /* Debug */,
+				C5AAAD7E2B7A0BD300095E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5AAAF5A2B7A115300095E50 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.10;
+			};
+		};
+		C5AAAF5F2B7A117300095E50 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+		C5AAAF622B7A11A600095E50 /* XCRemoteSwiftPackageReference "FittedSheets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gordontucker/FittedSheets";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5AAAF5B2B7A115300095E50 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5AAAF5A2B7A115300095E50 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		C5AAAF5D2B7A115300095E50 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5AAAF5A2B7A115300095E50 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		C5AAAF602B7A117300095E50 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5AAAF5F2B7A117300095E50 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C5AAAF632B7A11A600095E50 /* FittedSheets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5AAAF622B7A11A600095E50 /* XCRemoteSwiftPackageReference "FittedSheets" */;
+			productName = FittedSheets;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C5AAAD602B7A0BD200095E50 /* Project object */;
+}

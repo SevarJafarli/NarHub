@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5AAAD8D2B7A0C0500095E50 /* NarHubNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C5AAAD8C2B7A0C0500095E50 /* NarHubNetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5AAADF12B7A0CA100095E50 /* FreeSMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADD72B7A0CA100095E50 /* FreeSMSService.swift */; };
+		C5AAADF22B7A0CA100095E50 /* FreeSMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADD82B7A0CA100095E50 /* FreeSMS.swift */; };
+		C5AAADF32B7A0CA100095E50 /* FreeSMSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADD92B7A0CA100095E50 /* FreeSMSAPI.swift */; };
+		C5AAADF42B7A0CA100095E50 /* HubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADDB2B7A0CA100095E50 /* HubAPI.swift */; };
+		C5AAADF52B7A0CA100095E50 /* Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADDC2B7A0CA100095E50 /* Hub.swift */; };
+		C5AAADF62B7A0CA100095E50 /* HubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADDD2B7A0CA100095E50 /* HubService.swift */; };
+		C5AAADF72B7A0CA100095E50 /* BalanceTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADDF2B7A0CA100095E50 /* BalanceTransferService.swift */; };
+		C5AAADF82B7A0CA100095E50 /* BalanceTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE02B7A0CA100095E50 /* BalanceTransfer.swift */; };
+		C5AAADF92B7A0CA100095E50 /* BalanceTransferAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE12B7A0CA100095E50 /* BalanceTransferAPI.swift */; };
+		C5AAADFA2B7A0CA100095E50 /* VAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE32B7A0CA100095E50 /* VAS.swift */; };
+		C5AAADFB2B7A0CA100095E50 /* VASAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE42B7A0CA100095E50 /* VASAPI.swift */; };
+		C5AAADFC2B7A0CA100095E50 /* VASService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE52B7A0CA100095E50 /* VASService.swift */; };
+		C5AAADFD2B7A0CA100095E50 /* StoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE72B7A0CA100095E50 /* StoryService.swift */; };
+		C5AAADFE2B7A0CA100095E50 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE82B7A0CA100095E50 /* Story.swift */; };
+		C5AAADFF2B7A0CA100095E50 /* StoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE92B7A0CA100095E50 /* StoryAPI.swift */; };
+		C5AAAE002B7A0CA100095E50 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADEB2B7A0CA100095E50 /* Service.swift */; };
+		C5AAAE012B7A0CA100095E50 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADEC2B7A0CA100095E50 /* Result.swift */; };
+		C5AAAE022B7A0CA100095E50 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADED2B7A0CA100095E50 /* BaseService.swift */; };
+		C5AAAE032B7A0CA100095E50 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADEE2B7A0CA100095E50 /* Response.swift */; };
+		C5AAAE042B7A0CA100095E50 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADF02B7A0CA100095E50 /* Connectivity.swift */; };
+		C5AAAF552B7A113200095E50 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF542B7A113200095E50 /* Moya */; };
+		C5AAAF572B7A113200095E50 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF562B7A113200095E50 /* ReactiveMoya */; };
+		C5AAAF592B7A113200095E50 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF582B7A113200095E50 /* RxMoya */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5AAAD892B7A0C0500095E50 /* NarHubNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NarHubNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AAAD8C2B7A0C0500095E50 /* NarHubNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NarHubNetworkKit.h; sourceTree = "<group>"; };
+		C5AAADD72B7A0CA100095E50 /* FreeSMSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSService.swift; sourceTree = "<group>"; };
+		C5AAADD82B7A0CA100095E50 /* FreeSMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMS.swift; sourceTree = "<group>"; };
+		C5AAADD92B7A0CA100095E50 /* FreeSMSAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSAPI.swift; sourceTree = "<group>"; };
+		C5AAADDB2B7A0CA100095E50 /* HubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubAPI.swift; sourceTree = "<group>"; };
+		C5AAADDC2B7A0CA100095E50 /* Hub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hub.swift; sourceTree = "<group>"; };
+		C5AAADDD2B7A0CA100095E50 /* HubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubService.swift; sourceTree = "<group>"; };
+		C5AAADDF2B7A0CA100095E50 /* BalanceTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferService.swift; sourceTree = "<group>"; };
+		C5AAADE02B7A0CA100095E50 /* BalanceTransfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransfer.swift; sourceTree = "<group>"; };
+		C5AAADE12B7A0CA100095E50 /* BalanceTransferAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTransferAPI.swift; sourceTree = "<group>"; };
+		C5AAADE32B7A0CA100095E50 /* VAS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAS.swift; sourceTree = "<group>"; };
+		C5AAADE42B7A0CA100095E50 /* VASAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASAPI.swift; sourceTree = "<group>"; };
+		C5AAADE52B7A0CA100095E50 /* VASService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASService.swift; sourceTree = "<group>"; };
+		C5AAADE72B7A0CA100095E50 /* StoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryService.swift; sourceTree = "<group>"; };
+		C5AAADE82B7A0CA100095E50 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		C5AAADE92B7A0CA100095E50 /* StoryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryAPI.swift; sourceTree = "<group>"; };
+		C5AAADEB2B7A0CA100095E50 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C5AAADEC2B7A0CA100095E50 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C5AAADED2B7A0CA100095E50 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		C5AAADEE2B7A0CA100095E50 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		C5AAADF02B7A0CA100095E50 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5AAAD862B7A0C0500095E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AAAF592B7A113200095E50 /* RxMoya in Frameworks */,
+				C5AAAF552B7A113200095E50 /* Moya in Frameworks */,
+				C5AAAF572B7A113200095E50 /* ReactiveMoya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5AAAD7F2B7A0C0500095E50 = {
+			isa = PBXGroup;
+			children = (
+				C5AAAD8B2B7A0C0500095E50 /* NarHubNetworkKit */,
+				C5AAAD8A2B7A0C0500095E50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5AAAD8A2B7A0C0500095E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAD892B7A0C0500095E50 /* NarHubNetworkKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5AAAD8B2B7A0C0500095E50 /* NarHubNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADDE2B7A0CA100095E50 /* BalanceTransfer */,
+				C5AAADEA2B7A0CA100095E50 /* Base */,
+				C5AAADEF2B7A0CA100095E50 /* Connectivity */,
+				C5AAADD62B7A0CA100095E50 /* FreeSMS */,
+				C5AAADDA2B7A0CA100095E50 /* Hub */,
+				C5AAADE62B7A0CA100095E50 /* Story */,
+				C5AAADE22B7A0CA100095E50 /* VAS */,
+				C5AAAD8C2B7A0C0500095E50 /* NarHubNetworkKit.h */,
+			);
+			path = NarHubNetworkKit;
+			sourceTree = "<group>";
+		};
+		C5AAADD62B7A0CA100095E50 /* FreeSMS */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADD72B7A0CA100095E50 /* FreeSMSService.swift */,
+				C5AAADD82B7A0CA100095E50 /* FreeSMS.swift */,
+				C5AAADD92B7A0CA100095E50 /* FreeSMSAPI.swift */,
+			);
+			path = FreeSMS;
+			sourceTree = "<group>";
+		};
+		C5AAADDA2B7A0CA100095E50 /* Hub */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADDB2B7A0CA100095E50 /* HubAPI.swift */,
+				C5AAADDC2B7A0CA100095E50 /* Hub.swift */,
+				C5AAADDD2B7A0CA100095E50 /* HubService.swift */,
+			);
+			path = Hub;
+			sourceTree = "<group>";
+		};
+		C5AAADDE2B7A0CA100095E50 /* BalanceTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADDF2B7A0CA100095E50 /* BalanceTransferService.swift */,
+				C5AAADE02B7A0CA100095E50 /* BalanceTransfer.swift */,
+				C5AAADE12B7A0CA100095E50 /* BalanceTransferAPI.swift */,
+			);
+			path = BalanceTransfer;
+			sourceTree = "<group>";
+		};
+		C5AAADE22B7A0CA100095E50 /* VAS */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADE32B7A0CA100095E50 /* VAS.swift */,
+				C5AAADE42B7A0CA100095E50 /* VASAPI.swift */,
+				C5AAADE52B7A0CA100095E50 /* VASService.swift */,
+			);
+			path = VAS;
+			sourceTree = "<group>";
+		};
+		C5AAADE62B7A0CA100095E50 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADE72B7A0CA100095E50 /* StoryService.swift */,
+				C5AAADE82B7A0CA100095E50 /* Story.swift */,
+				C5AAADE92B7A0CA100095E50 /* StoryAPI.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		C5AAADEA2B7A0CA100095E50 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADEB2B7A0CA100095E50 /* Service.swift */,
+				C5AAADEC2B7A0CA100095E50 /* Result.swift */,
+				C5AAADED2B7A0CA100095E50 /* BaseService.swift */,
+				C5AAADEE2B7A0CA100095E50 /* Response.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C5AAADEF2B7A0CA100095E50 /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADF02B7A0CA100095E50 /* Connectivity.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C5AAAD842B7A0C0500095E50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AAAD8D2B7A0C0500095E50 /* NarHubNetworkKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C5AAAD882B7A0C0500095E50 /* NarHubNetworkKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5AAAD902B7A0C0500095E50 /* Build configuration list for PBXNativeTarget "NarHubNetworkKit" */;
+			buildPhases = (
+				C5AAAD842B7A0C0500095E50 /* Headers */,
+				C5AAAD852B7A0C0500095E50 /* Sources */,
+				C5AAAD862B7A0C0500095E50 /* Frameworks */,
+				C5AAAD872B7A0C0500095E50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NarHubNetworkKit;
+			packageProductDependencies = (
+				C5AAAF542B7A113200095E50 /* Moya */,
+				C5AAAF562B7A113200095E50 /* ReactiveMoya */,
+				C5AAAF582B7A113200095E50 /* RxMoya */,
+			);
+			productName = NarHubNetworkKit;
+			productReference = C5AAAD892B7A0C0500095E50 /* NarHubNetworkKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5AAAD802B7A0C0500095E50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C5AAAD882B7A0C0500095E50 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = C5AAAD832B7A0C0500095E50 /* Build configuration list for PBXProject "NarHubNetworkKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5AAAD7F2B7A0C0500095E50;
+			packageReferences = (
+				C5AAAF532B7A113200095E50 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = C5AAAD8A2B7A0C0500095E50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5AAAD882B7A0C0500095E50 /* NarHubNetworkKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5AAAD872B7A0C0500095E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5AAAD852B7A0C0500095E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AAADF72B7A0CA100095E50 /* BalanceTransferService.swift in Sources */,
+				C5AAADF52B7A0CA100095E50 /* Hub.swift in Sources */,
+				C5AAADFA2B7A0CA100095E50 /* VAS.swift in Sources */,
+				C5AAADF42B7A0CA100095E50 /* HubAPI.swift in Sources */,
+				C5AAADF82B7A0CA100095E50 /* BalanceTransfer.swift in Sources */,
+				C5AAAE032B7A0CA100095E50 /* Response.swift in Sources */,
+				C5AAADF32B7A0CA100095E50 /* FreeSMSAPI.swift in Sources */,
+				C5AAADFF2B7A0CA100095E50 /* StoryAPI.swift in Sources */,
+				C5AAADFC2B7A0CA100095E50 /* VASService.swift in Sources */,
+				C5AAAE022B7A0CA100095E50 /* BaseService.swift in Sources */,
+				C5AAADFE2B7A0CA100095E50 /* Story.swift in Sources */,
+				C5AAAE002B7A0CA100095E50 /* Service.swift in Sources */,
+				C5AAAE042B7A0CA100095E50 /* Connectivity.swift in Sources */,
+				C5AAADF12B7A0CA100095E50 /* FreeSMSService.swift in Sources */,
+				C5AAADFD2B7A0CA100095E50 /* StoryService.swift in Sources */,
+				C5AAADFB2B7A0CA100095E50 /* VASAPI.swift in Sources */,
+				C5AAADF22B7A0CA100095E50 /* FreeSMS.swift in Sources */,
+				C5AAAE012B7A0CA100095E50 /* Result.swift in Sources */,
+				C5AAADF62B7A0CA100095E50 /* HubService.swift in Sources */,
+				C5AAADF92B7A0CA100095E50 /* BalanceTransferAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C5AAAD8E2B7A0C0500095E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5AAAD8F2B7A0C0500095E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5AAAD912B7A0C0500095E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NarHubNetworkKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5AAAD922B7A0C0500095E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NarHubNetworkKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5AAAD832B7A0C0500095E50 /* Build configuration list for PBXProject "NarHubNetworkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AAAD8E2B7A0C0500095E50 /* Debug */,
+				C5AAAD8F2B7A0C0500095E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5AAAD902B7A0C0500095E50 /* Build configuration list for PBXNativeTarget "NarHubNetworkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AAAD912B7A0C0500095E50 /* Debug */,
+				C5AAAD922B7A0C0500095E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5AAAF532B7A113200095E50 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 14.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5AAAF542B7A113200095E50 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5AAAF532B7A113200095E50 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		C5AAAF562B7A113200095E50 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5AAAF532B7A113200095E50 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		C5AAAF582B7A113200095E50 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5AAAF532B7A113200095E50 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C5AAAD802B7A0C0500095E50 /* Project object */;
+}
