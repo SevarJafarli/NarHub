@@ -12,7 +12,8 @@ protocol BalanceTransferViewDelegate: AnyObject {
     func openContacts()
 }
 
-final class BalanceTransferView: UIView {
+final class BalanceTransferView: UIView, ThemeableView {
+    var theme: ThemeProvider = App.theme
     
     weak var delegate: BalanceTransferViewDelegate?
     
@@ -37,10 +38,10 @@ final class BalanceTransferView: UIView {
         return view
     }()
     
-    private let transferServiceInfoText: UILabel = {
+    private lazy var transferServiceInfoText: UILabel = {
         let label = UILabel()
         label.text = "Xidmətdən gün ərzində 10 dəfə istifadə etmək olar. Hər bir sorğunun dəyəri 0.10 AZN təşkil edir."
-        label.textColor = UIColor(named: ColorStyle.darkGrayLabelColor.rawValue)
+        label.textColor = adaptiveColor(.darkGrayLabelColor)
         label.numberOfLines = 0
         label.font = AppFonts.regularBodySize12.fontStyle
         return label
@@ -53,7 +54,7 @@ final class BalanceTransferView: UIView {
     }()
     
     private func setupUI() {
-        self.backgroundColor = UIColor(named: ColorStyle.bgColor.rawValue)
+        self.backgroundColor = adaptiveColor(.bgColor)
     }
     
     private func addSubviews() {

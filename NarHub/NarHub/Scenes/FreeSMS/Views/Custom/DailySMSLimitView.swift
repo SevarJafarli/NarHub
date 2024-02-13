@@ -8,7 +8,11 @@
 import UIKit
 import NarHubUIKit
 
-class DailySMSLimitView: UIView {
+class DailySMSLimitView: UIView, ThemeableView {
+    
+    var theme: ThemeProvider = App.theme
+    
+    
     private let titleLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
@@ -16,10 +20,10 @@ class DailySMSLimitView: UIView {
         return lbl
     }()
     
-    private let smsType: UILabel = {
+    private lazy var smsType: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldBodySize12.fontStyle
-        lbl.textColor = UIColor(named: ColorStyle.labelColor.rawValue)
+        lbl.textColor = adaptiveColor(.labelColor)
         return lbl
     }()
     

@@ -7,7 +7,10 @@
 
 import UIKit
 import NarHubUIKit
-class TransferAmountCell: UICollectionViewCell {
+
+
+class TransferAmountCell: UICollectionViewCell, ThemeableView {
+    var theme: ThemeProvider  = App.theme
     
     static var reuseIdentifier = "TransferAmountCell"
 
@@ -19,7 +22,7 @@ class TransferAmountCell: UICollectionViewCell {
         return lbl
     }()
     
-    
+    //for testing whether button tapping is working
     var isButtonSelected: Bool? {
         didSet {
             self.contentView.backgroundColor = .red
@@ -64,9 +67,10 @@ class TransferAmountCell: UICollectionViewCell {
     
     public func changeState(isSelected: Bool) {
         print("Change state")
-        self.contentView.backgroundColor = self.isSelected ? UIColor(named: ColorStyle.selectedBtnColor.rawValue) :  .white
-        self.contentView.layer.borderColor = isSelected ? UIColor(named: ColorStyle.mainColor.rawValue)?.cgColor : UIColor.white.cgColor
         
-        self.titleLabel.textColor = self.isSelected ? UIColor(named: ColorStyle.mainColor.rawValue) : .black
+        self.contentView.backgroundColor = self.isSelected ? adaptiveColor(.selectedBtnColor) :  .white
+        self.contentView.layer.borderColor = isSelected ? adaptiveColor(.mainColor).cgColor : UIColor.white.cgColor
+        
+        self.titleLabel.textColor = self.isSelected ? adaptiveColor(.mainColor) : .black
     }
 }

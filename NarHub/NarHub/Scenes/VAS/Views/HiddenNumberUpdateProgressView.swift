@@ -8,7 +8,9 @@
 import UIKit
 import NarHubUIKit
 
-class HiddenNumberUpdateProgressView: UIView {
+class HiddenNumberUpdateProgressView: UIView, ThemeableView {
+    var theme: ThemeProvider = App.theme
+    
     
     lazy var title: UILabel = {
         let lbl = UILabel()
@@ -19,7 +21,7 @@ class HiddenNumberUpdateProgressView: UIView {
     
     lazy var numberOfDays: UILabel = {
         let lbl = UILabel()
-        lbl.textColor = UIColor(named: ColorStyle.darkGrayLabelColor.rawValue)
+        lbl.textColor = adaptiveColor(.darkGrayLabelColor)
         lbl.font = AppFonts.boldBodySize14.fontStyle
         lbl.textAlignment = .right
         return lbl
@@ -34,8 +36,8 @@ class HiddenNumberUpdateProgressView: UIView {
     
     lazy var progressBar: UIProgressView = {
         let view = UIProgressView()
-        view.progressTintColor = UIColor(named: ColorStyle.mainColor.rawValue)
-        view.trackTintColor = UIColor(named: ColorStyle.labelColor.rawValue)
+        view.progressTintColor = adaptiveColor(.mainColor)
+        view.trackTintColor = adaptiveColor(.labelColor)
         return view
     }()
     //MARK: Init

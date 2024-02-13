@@ -8,7 +8,10 @@
 import UIKit
 import NarHubUIKit
 
-class VASCardView: UIView {
+class VASCardView: UIView, ThemeableView {
+    var theme: ThemeProvider = App.theme
+    
+    
     let vasModel: VASCardModel
     
     lazy var titleLabel: UILabel = {
@@ -30,7 +33,7 @@ class VASCardView: UIView {
     lazy var vasSwitch: UISwitch = {
         let vasSwitch = UISwitch()
         vasSwitch.isOn = true
-        vasSwitch.onTintColor = UIColor(named: ColorStyle.mainColor.rawValue)
+        vasSwitch.onTintColor = adaptiveColor(.mainColor)
         return vasSwitch
     }()
     

@@ -8,7 +8,10 @@
 import UIKit
 import NarHubUIKit
 
-class BalanceTransferInfoView: UIView {
+class BalanceTransferInfoView: UIView, ThemeableView {
+    var theme: ThemeProvider = App.theme
+    
+    
     private let infoText: UILabel = {
         let lbl = UILabel()
         lbl.text = "“Balans köçürmə” xidmətindən istifadə etməklə sən öz balansından istənilən Nar abunəçisinin balansına 0.2, 0.5, 1 və ya 2 AZN məbləğində balans köçürə bilərsən."
@@ -23,7 +26,7 @@ class BalanceTransferInfoView: UIView {
     }
     
     private func setupUI() {
-        self.backgroundColor = UIColor(named: ColorStyle.disabledBtnColor.rawValue)
+        self.backgroundColor = adaptiveColor(.disabledBtnColor)
         self.layer.cornerRadius = 16
     }
     

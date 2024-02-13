@@ -43,6 +43,7 @@ enum Dashboard {
     }
 }
 
+//MARK: StoryModel
 
 struct StoryModel: Equatable {
     var isSeen: Bool = false
@@ -50,6 +51,9 @@ struct StoryModel: Equatable {
     let title: String
     let url: String
 }
+
+
+//MARK: ProductType
 
 enum ProductType: String, CaseIterable {
     case tariff = "Tarifler"
@@ -70,6 +74,10 @@ extension ProductType {
         }
     }
 }
+
+
+//MARK: HubModel
+
 struct HubModel {
     let title: String
     let id: Int

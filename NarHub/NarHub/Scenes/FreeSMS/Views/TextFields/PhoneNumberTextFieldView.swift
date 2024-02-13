@@ -12,10 +12,11 @@ protocol PhoneNumberTextFieldViewDelegate: AnyObject {
     func openContacts()
 }
 
-class PhoneNumberTextFieldView: UIView {
+class PhoneNumberTextFieldView: UIView, ThemeableView {
     
     weak var delegate: PhoneNumberTextFieldViewDelegate?
     
+    var theme: ThemeProvider = App.theme
     private lazy var backView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -41,7 +42,7 @@ class PhoneNumberTextFieldView: UIView {
         let textField = UITextField()
         textField.delegate = self
         textField.keyboardType = .numberPad
-        textField.tintColor = UIColor(named: ColorStyle.mainColor.rawValue)
+        textField.tintColor = adaptiveColor(.mainColor)
         textField.textColor = .black
         textField.font = AppFonts.boldBodySize16.fontStyle
         return textField

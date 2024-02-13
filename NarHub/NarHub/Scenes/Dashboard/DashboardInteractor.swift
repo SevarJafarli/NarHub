@@ -13,8 +13,7 @@
 import UIKit
 import NarHubNetworkKit
 
-protocol DashboardBusinessLogic
-{
+protocol DashboardBusinessLogic {
     func fetchStories(request: Dashboard.FetchStories.Request)
     
     func load(request: Dashboard.Load.Request)
@@ -22,40 +21,50 @@ protocol DashboardBusinessLogic
     func fetchHubs(request: Dashboard.FetchHubs.Request)
 }
 
-protocol DashboardDataStore
-{
-  //var name: String { get set }
+protocol DashboardDataStore {
+    //var name: String { get set }
 }
 
-class DashboardInteractor: DashboardBusinessLogic, DashboardDataStore
-{
+class DashboardInteractor: DashboardBusinessLogic, DashboardDataStore {
     
-  var presenter: DashboardPresentationLogic?
-lazy var worker: DashboardWorkingLogic = DashboardWorker()
+    var presenter: DashboardPresentationLogic?
+    lazy var worker: DashboardWorkingLogic = DashboardWorker()
     
     var hubServices: HubResponse?
     var stories: StoriesResponse?
-
-  func fetchStories(request: Dashboard.FetchStories.Request) {
-      worker.fetchStories({ [weak self] data in
+    
+    func fetchStories(request: Dashboard.FetchStories.Request) {
+        worker.fetchStories({ [weak self] data in
             guard let self = self else { return }
-
+            
             if let data = data {
                 self.stories = data
                 let response = Dashboard.FetchStories.Response( stories: data)
                 self.presenter?.presentStories(response: response)
             }
         })
-  }
+    }
     
     func fetchHubs(request: Dashboard.FetchHubs.Request) {
-       
-      worker.fetchHubServices({ [weak self] data in
+        
+        worker.fetchHubServices({ [weak self] data in
             guard let self = self else { return }
-
+            
             if let data = data {
                 self.hubServices = data
-                let response = Dashboard.FetchHubs.Response( hubServices: data)
+                
+                var hubModels = [HubObjectModel]()
+                
+                if let hubList = self.hubServices?.list {
+                    for hub in hubList {
+                        hubModels.append(HubObjectModel(title: hub.title ?? "", id: hub.id ?? 0))
+                    }
+                }
+                //
+                //                CacheManager.shared.saveHubModels(hubModels: hubModels)
+                print("Savedhubmodels to cache")
+                print(hubModels)
+                let response = Dashboard.FetchHubs.Response(hubServices: data)
                 self.presenter?.presentHubServices(response: response)
             }
         })
@@ -69,4 +78,4 @@ lazy var worker: DashboardWorkingLogic = DashboardWorker()
 }
 
 
-                            
+

@@ -9,11 +9,14 @@ import UIKit
 import NarHubUIKit
 
 
-class ServiceViewCell: UICollectionViewCell {
+class ServiceViewCell: UICollectionViewCell, ThemeableView {
+    
     static var reuseIdentifier: String = "ServiceViewCell"
 
+    var theme: ThemeProvider = App.theme
     
-    private let serviceLabel: UILabel = {
+    
+    private lazy var serviceLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldBodySize14.fontStyle
         lbl.numberOfLines = 0
@@ -21,10 +24,10 @@ class ServiceViewCell: UICollectionViewCell {
         return lbl
     }()
     
-    let circleView: UIView = {
+    private lazy var circleView: UIView = {
         let circleView = UIView()
         circleView.layer.cornerRadius = 20
-        circleView.backgroundColor = UIColor(named: ColorStyle.borderColor.rawValue)
+        circleView.backgroundColor = adaptiveColor(.borderColor)
         return circleView
     }()
     

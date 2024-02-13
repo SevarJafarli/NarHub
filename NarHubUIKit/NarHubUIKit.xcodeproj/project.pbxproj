@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5AAADA12B7A0C2100095E50 /* NarHubUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C5AAADA02B7A0C2100095E50 /* NarHubUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5AAAE0A2B7A0CAD00095E50 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAE062B7A0CAD00095E50 /* Colors.swift */; };
 		C5AAAE0B2B7A0CAD00095E50 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAE082B7A0CAD00095E50 /* AppFonts.swift */; };
 		C5AAAE0C2B7A0CAD00095E50 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAE092B7A0CAD00095E50 /* AppTheme.swift */; };
@@ -15,7 +14,6 @@
 
 /* Begin PBXFileReference section */
 		C5AAAD9D2B7A0C2100095E50 /* NarHubUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NarHubUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5AAADA02B7A0C2100095E50 /* NarHubUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NarHubUIKit.h; sourceTree = "<group>"; };
 		C5AAAE062B7A0CAD00095E50 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C5AAAE082B7A0CAD00095E50 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		C5AAAE092B7A0CAD00095E50 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
@@ -32,6 +30,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5815B322B7B3FA00018DF32 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAAE092B7A0CAD00095E50 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		C5AAAD932B7A0C2000095E50 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +57,9 @@
 		C5AAAD9F2B7A0C2100095E50 /* NarHubUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				C5AAAE092B7A0CAD00095E50 /* AppTheme.swift */,
+				C5815B322B7B3FA00018DF32 /* Theme */,
 				C5AAAE052B7A0CAD00095E50 /* Colors */,
 				C5AAAE072B7A0CAD00095E50 /* Fonts */,
-				C5AAADA02B7A0C2100095E50 /* NarHubUIKit.h */,
 			);
 			path = NarHubUIKit;
 			sourceTree = "<group>";
@@ -82,7 +87,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5AAADA12B7A0C2100095E50 /* NarHubUIKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +307,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +319,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NarHubUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -335,6 +344,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +356,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NarHubUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

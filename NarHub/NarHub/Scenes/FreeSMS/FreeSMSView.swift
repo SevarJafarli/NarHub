@@ -17,9 +17,11 @@ protocol FreeSMSViewDelegate: AnyObject {
     func openContacts()
 }
 
-class FreeSMSView: UIView {
+class FreeSMSView: UIView, ThemeableView {
     
     weak var delegate: FreeSMSViewDelegate?
+    
+    var theme: ThemeProvider = App.theme
     
     lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
@@ -120,7 +122,7 @@ class FreeSMSView: UIView {
     
     
     private func setupUI() {
-        self.backgroundColor = UIColor(named: ColorStyle.bgColor.rawValue)
+        self.backgroundColor = adaptiveColor(.bgColor)
     }
     
     //MARK: Init

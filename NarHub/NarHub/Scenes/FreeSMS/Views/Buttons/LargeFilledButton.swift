@@ -11,16 +11,18 @@ import NarHubUIKit
 protocol LargeFilledButtonDelegate: AnyObject {
     func onButtonTap(sender: UIButton)
 }
-class LargeFilledButton: UIButton {
+class LargeFilledButton: UIButton, ThemeableView {
     weak var delegate: LargeFilledButtonDelegate?
+    
+    var theme: ThemeProvider = App.theme
     
     init(isButtonEnabled: Bool, title: String) {
         super.init(frame: .zero)
         self.isEnabled = isButtonEnabled
         self.setTitle(title, for: .normal)
-        self.backgroundColor = isButtonEnabled ? UIColor(named: ColorStyle.mainColor.rawValue) :  UIColor(named: ColorStyle.disabledBtnColor.rawValue)
+        self.backgroundColor = isButtonEnabled ? adaptiveColor(.mainColor) : adaptiveColor(.disabledBtnColor)
         self.layer.cornerRadius = 28
-        self.setTitleColor(isButtonEnabled ? .white : UIColor(named: ColorStyle.labelColor.rawValue), for: .normal)
+        self.setTitleColor(isButtonEnabled ? .white : adaptiveColor(.labelColor), for: .normal)
         self.addTarget(self, action: #selector(onTap(_:)), for: .touchUpInside)
     }
     
@@ -36,9 +38,9 @@ class LargeFilledButton: UIButton {
     
     public func changeButtonState(isEnabled: Bool) {
         self.isEnabled = isEnabled
-        self.backgroundColor = isEnabled ? UIColor(named: ColorStyle.mainColor.rawValue) : UIColor(named: ColorStyle.disabledBtnColor.rawValue)
+        self.backgroundColor = isEnabled ? adaptiveColor(.mainColor) : adaptiveColor(.disabledBtnColor)
 
-        self.setTitleColor(isEnabled ? .white:UIColor(named: ColorStyle.labelColor.rawValue), for: .normal)
+        self.setTitleColor(isEnabled ? .white: adaptiveColor(.labelColor), for: .normal)
         
     }
 }

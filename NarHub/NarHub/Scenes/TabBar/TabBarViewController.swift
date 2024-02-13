@@ -12,9 +12,12 @@ protocol TabBarDisplayLogic: AnyObject {
     func displaySomething(viewModel: TabBar.Something.ViewModel)
 }
 
-class TabBarController: UITabBarController, TabBarDisplayLogic {
+final class TabBarController: UITabBarController, ThemeableViewController {
     var interactor: TabBarBusinessLogic?
     var router: (NSObjectProtocol & TabBarRoutingLogic & TabBarDataPassing)?
+    
+    
+    var theme: ThemeProvider = App.theme
     
     private var middleButton: RoundedButton?
     
@@ -79,22 +82,18 @@ class TabBarController: UITabBarController, TabBarDisplayLogic {
         let shape = tabbarView.setupCustomTabBar(width: Int(self.tabBar.bounds.width), height: Int(self.tabBar.bounds.height))
         
         self.tabBar.layer.insertSublayer(shape, at: 0)
-        self.tabBar.tintColor =  UIColor(named: ColorStyle.mainColor.rawValue)
-        self.tabBar.unselectedItemTintColor =  UIColor(named: ColorStyle.labelColor.rawValue)
+        self.tabBar.tintColor = adaptiveColor(.mainColor)
+        self.tabBar.unselectedItemTintColor = adaptiveColor(.labelColor)
         self.tabBar.backgroundColor = .clear
         self.tabBar.isTranslucent = false
         self.tabBar.barTintColor = .white
 
-        self.view.backgroundColor = UIColor(named: ColorStyle.bgColor.rawValue)
+        self.view.backgroundColor = adaptiveColor(.bgColor)
     }
     
     func doSomething() {
         let request = TabBar.Something.Request()
         interactor?.doSomething(request: request)
-    }
-    
-    func displaySomething(viewModel: TabBar.Something.ViewModel) {
-        
     }
 }
 
@@ -108,3 +107,7 @@ extension TabBarController: UITabBarControllerDelegate {
 
 
 
+extension TabBarController: TabBarDisplayLogic {
+    func displaySomething(viewModel: TabBar.Something.ViewModel) {
+    }
+}

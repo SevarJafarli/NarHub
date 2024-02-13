@@ -27,6 +27,7 @@ public protocol ServiceProtocol {
     var freeSMS: FreeSMSServiceProtocol { get }
     var vas: VASServiceProtocol { get }
     var story: StoryServiceProtocol { get }
+    
     func cancelAll()
 }
 

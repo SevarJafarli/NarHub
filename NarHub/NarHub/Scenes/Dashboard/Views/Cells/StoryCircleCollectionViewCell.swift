@@ -8,10 +8,15 @@
 import UIKit
 import SnapKit
 import NarHubUIKit
-class StoryCircleCell: UICollectionViewCell {
+class StoryCircleCell: UICollectionViewCell, ThemeableView {
+    
     static var reuseIdentifier: String = "StoryCircleCell"
     
-    private let highlightImageView: UIImageView = {
+    
+    var theme: ThemeProvider = App.theme
+    
+    
+    private lazy var highlightImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 36
@@ -19,10 +24,10 @@ class StoryCircleCell: UICollectionViewCell {
         return imageView
     }()
     
-    private let circleView: UIView = {
+    private lazy var circleView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
-        view.layer.borderColor = UIColor(named: ColorStyle.mainColor.rawValue)!.cgColor
+        view.layer.borderColor = adaptiveColor(.mainColor).cgColor
         view.layer.borderWidth = 2
         view.layer.cornerRadius = 40
         return view
@@ -64,6 +69,6 @@ class StoryCircleCell: UICollectionViewCell {
     public func configure(storyModel: StoryModel) {
         let url = URL(string: storyModel.url)
         self.highlightImageView.sd_setImage(with: url)
-        self.circleView.layer.borderColor = storyModel.isSeen ? UIColor(named: ColorStyle.labelColor.rawValue)!.cgColor : UIColor(named: ColorStyle.mainColor.rawValue)!.cgColor
+        self.circleView.layer.borderColor = storyModel.isSeen ? adaptiveColor(.labelColor).cgColor : adaptiveColor(.mainColor).cgColor
     }
 }

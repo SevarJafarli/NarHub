@@ -9,7 +9,9 @@ import UIKit
 import NarHubUIKit
 
 
-final class VASView: UIView {
+final class VASView: UIView, ThemeableView {
+    var theme: ThemeProvider = App.theme
+    
     
     lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
@@ -60,7 +62,7 @@ final class VASView: UIView {
     }
     
     private func setupUI() {
-        self.backgroundColor = UIColor(named: ColorStyle.bgColor.rawValue)
+        self.backgroundColor = adaptiveColor(.bgColor)
     }
     
     private func addConstraints() {

@@ -11,16 +11,25 @@ protocol TransferAmountButtonDelegate: AnyObject {
     func onButtonSelected(sender: UIButton)
 }
 
-class TransferAmountButton: UIButton {
+class TransferAmountButton: UIButton, ThemeableView {
+    var theme: ThemeProvider = App.theme
+    
     weak var delegate: TransferAmountButtonDelegate?
     
     fileprivate func setupUI(amount: String) {
+//        var buttonConfiguration = UIButton.Configuration.borderedTinted()
+//        buttonConfiguration.title = "\(amount) ₼"
+//        buttonConfiguration.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+//        buttonConfiguration.baseBackgroundColor = self.isSelected ? adaptiveColor(.selectedBtnColor) :  .white
+//        buttonConfiguration.background.cornerRadius = 28
+//        
         self.setTitle("\(amount) ₼", for: .normal)
-        self.backgroundColor = self.isSelected ? UIColor(named: ColorStyle.selectedBtnColor.rawValue) :  .white
+        self.backgroundColor = self.isSelected ? adaptiveColor(.selectedBtnColor) :  .white
         self.layer.cornerRadius = 28
-        self.layer.borderColor = self.isSelected ? UIColor(named: ColorStyle.mainColor.rawValue)?.cgColor : UIColor.white.cgColor
+        self.layer.borderColor = self.isSelected ? adaptiveColor(.mainColor).cgColor : UIColor.white.cgColor
         self.layer.borderWidth = 1
-        self.setTitleColor( self.isSelected ? UIColor(named: ColorStyle.mainColor.rawValue) : .black, for: .normal)
+        self.setTitleColor( self.isSelected ? adaptiveColor(.mainColor) : .black, for: .normal)
+        
         self.contentEdgeInsets = .init(top: 16, left: 16, bottom: 16, right: 16)
         
         self.addTarget(self, action: #selector(onTap(_:)), for: .touchUpInside)
@@ -39,14 +48,16 @@ class TransferAmountButton: UIButton {
     required init?(coder: NSCoder) {
         fatalError()
     }
-    
-    public func changeButtonState() {
-        self.backgroundColor = self.isSelected ? UIColor(named:ColorStyle.selectedBtnColor.rawValue) :  .white
-        self.layer.borderColor = self.isSelected ? UIColor(named: ColorStyle.mainColor.rawValue)!.cgColor : UIColor.white.cgColor
-        
-        self.setTitleColor( self.isSelected ? UIColor(named: ColorStyle.mainColor.rawValue) : .black, for: .normal)
-        
+
+    var isButtonSelected: Bool? {
+        didSet {
+            self.backgroundColor = adaptiveColor(.selectedBtnColor)
+            self.layer.borderColor = adaptiveColor(.mainColor).cgColor
+            self.setTitleColor(adaptiveColor(.mainColor), for: .normal)
+        }
     }
+
+    
     @objc func onTap(_ sender: UIButton) {
         delegate?.onButtonSelected(sender: sender)
     }

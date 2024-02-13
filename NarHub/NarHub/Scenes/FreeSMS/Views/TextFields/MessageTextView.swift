@@ -12,23 +12,28 @@ import NarHubUIKit
 protocol MessageTextViewDelegate: AnyObject {
     func textViewDidChange(text: String)
 }
-class MessageTextView: UIView {
+class MessageTextView: UIView, ThemeableView {
+    
     
     weak var viewDelegate: MessageTextViewDelegate?
     
+    var theme: ThemeProvider = App.theme
+    
     lazy var textView: UITextView = {
         let textView = UITextView()
-        textView.textColor = UIColor(named: ColorStyle.darkGrayLabelColor.rawValue)
+        textView.textColor = adaptiveColor(.darkGrayLabelColor)
         textView.font = AppFonts.boldBodySize16.fontStyle
         textView.delegate = self
-        textView.tintColor = UIColor(named: ColorStyle.mainColor.rawValue)
+        textView.tintColor = adaptiveColor(.mainColor)
         textView.backgroundColor = .clear
         return textView
     }()
+    
+    
     lazy var placeholderText: UILabel = {
         let lbl = UILabel()
         lbl.text = "Mesaj daxil edin..."
-        lbl.textColor = UIColor(named: ColorStyle.darkGrayLabelColor.rawValue)
+        lbl.textColor = adaptiveColor(.darkGrayLabelColor)
         return lbl
     }()
     lazy var smsCountTitleLabel: UILabel = {

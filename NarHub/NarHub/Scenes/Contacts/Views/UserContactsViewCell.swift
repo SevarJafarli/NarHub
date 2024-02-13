@@ -8,7 +8,9 @@
 import UIKit
 import NarHubUIKit
 
-class UserContactsViewCell: UITableViewCell {
+class UserContactsViewCell: UITableViewCell, ThemeableView {
+    var theme: ThemeProvider = App.theme
+    
     
     static var reuseIdentifier = "UserContactsViewCell"
     
@@ -33,9 +35,9 @@ class UserContactsViewCell: UITableViewCell {
     
     lazy var contactInitialView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(named: ColorStyle.selectedBtnColor.rawValue)
+        view.backgroundColor = adaptiveColor(.selectedBtnColor)
         view.layer.cornerRadius = 15
-        view.layer.borderColor = UIColor(named: ColorStyle.mainColor.rawValue)?.cgColor
+        view.layer.borderColor = adaptiveColor(.mainColor).cgColor
         view.layer.borderWidth = 1
         return view
     }()
@@ -43,7 +45,7 @@ class UserContactsViewCell: UITableViewCell {
     lazy var contactInitialLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
-        lbl.textColor = UIColor(named: ColorStyle.mainColor.rawValue)
+        lbl.textColor = adaptiveColor(.mainColor)
         return lbl
     }()
     

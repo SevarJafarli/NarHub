@@ -7,16 +7,20 @@
 
 import UIKit
 import NarHubUIKit
-class StoryProgressBar: UIProgressView {
+
+class StoryProgressBar: UIProgressView, ThemeableView {
+    
+    var theme: ThemeProvider = App.theme
     
     //MARK: Init
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.trackTintColor = UIColor(named: ColorStyle.darkGrayLabelColor.rawValue)
-        self.tintColor = UIColor(named: ColorStyle.mainColor.rawValue)
-       
+        self.trackTintColor = adaptiveColor(.darkGrayLabelColor)
+        self.tintColor = adaptiveColor(.mainColor)
     }
+    
+    
     required init?(coder: NSCoder) {
         fatalError()
     }

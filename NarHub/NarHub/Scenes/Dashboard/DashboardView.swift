@@ -8,11 +8,13 @@
 import UIKit
 import NarHubUIKit
 
-class DashboardView: UIView {
+class DashboardView: UIView, ThemeableView {
+    var theme: ThemeProvider = App.theme
+    
     
     private lazy var externalView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(named: ColorStyle.bgColor.rawValue)
+        view.backgroundColor = adaptiveColor(.bgColor)
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         view.layer.cornerRadius = 15
         return view
@@ -39,8 +41,6 @@ class DashboardView: UIView {
     
     lazy var storiesCollectionView: StoriesCollectionView = {
         let collectionView = StoriesCollectionView()
-        collectionView.backgroundColor = .clear
-        collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(StoryCircleCell.self, forCellWithReuseIdentifier: StoryCircleCell.reuseIdentifier)
         collectionView.isHidden = true
         return collectionView
@@ -80,7 +80,7 @@ class DashboardView: UIView {
     }
     
     fileprivate func setupUI() {
-        self.backgroundColor = UIColor(named: ColorStyle.mainColor.rawValue)
+        self.backgroundColor = adaptiveColor(.mainColor)
     }
     
     fileprivate func addSubviews() {

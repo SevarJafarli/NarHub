@@ -56,11 +56,11 @@ class ServicesView: UIView {
     }
     
     private func calculateServiceCollectionViewHeight() -> Int {
-        let itemHeight = 66
-        let sectionInset = 8
+//        let itemHeight = 66
+//        let sectionInset = 8
 //        let totalHeight = columnCount * itemHeight + insetCount * sectionInset
         
-        let totalHeight = UIScreen.main.bounds.height * 0.8 - 310 - 23
+        let totalHeight = UIScreen.main.bounds.height * 0.8 - 310 - 23 // according to design
         return Int(totalHeight)
     }
     

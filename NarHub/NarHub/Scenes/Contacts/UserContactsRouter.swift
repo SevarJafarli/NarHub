@@ -20,22 +20,10 @@ final class UserContactsRouter: NSObject, UserContactsRoutingLogic, UserContacts
     
     func dismissAndRouteToFreeSMS() {
         self.backToFreeSMS(source: viewController!)
-        
-        let destinationVC = FreeSMSViewController()
-        FreeSMSConfigurator.configure(destinationVC)
-        
-        var destinationDS = destinationVC.router!.dataStore!
-
     }
     
     func dismissAndRouteToBalanceTransfer() {
         self.backToBalanceTransfer(source: viewController!)
-        
-        let destinationVC = BalanceTransferViewController()
-        BalanceTransferConfigurator.configure(destinationVC)
-        
-        var destinationDS = destinationVC.router!.dataStore!
-
     }
     
     

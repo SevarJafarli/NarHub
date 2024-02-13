@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LocalStorageManager {
+final class LocalStorageManager {
     static let shared = LocalStorageManager()
     
     enum StorageKeys: String {

@@ -15,7 +15,6 @@
 		C5AAAF5E2B7A115300095E50 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF5D2B7A115300095E50 /* SDWebImageMapKit */; };
 		C5AAAF612B7A117300095E50 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF602B7A117300095E50 /* SnapKit */; };
 		C5AAAF642B7A11A600095E50 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = C5AAAF632B7A11A600095E50 /* FittedSheets */; };
-		C5AAB0152B7A121D00095E50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF652B7A121C00095E50 /* SceneDelegate.swift */; };
 		C5AAB0162B7A121D00095E50 /* DateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF672B7A121C00095E50 /* DateCalculator.swift */; };
 		C5AAB0172B7A121D00095E50 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF682B7A121C00095E50 /* DateFormatter.swift */; };
 		C5AAB0182B7A121D00095E50 /* DoubleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAF692B7A121C00095E50 /* DoubleFormatter.swift */; };
@@ -135,7 +134,6 @@
 		C5AAAD682B7A0BD200095E50 /* NarHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NarHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AAAF4C2B7A0D6E00095E50 /* NarHubNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NarHubNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AAAF502B7A0D7100095E50 /* NarHubUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NarHubUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5AAAF652B7A121C00095E50 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C5AAAF672B7A121C00095E50 /* DateCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCalculator.swift; sourceTree = "<group>"; };
 		C5AAAF682B7A121C00095E50 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		C5AAAF692B7A121C00095E50 /* DoubleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleFormatter.swift; sourceTree = "<group>"; };
@@ -279,7 +277,6 @@
 				C5AAAF7A2B7A121C00095E50 /* Helpers */,
 				C5AAAF772B7A121C00095E50 /* Managers */,
 				C5AAAF732B7A121C00095E50 /* Resources */,
-				C5AAAF652B7A121C00095E50 /* SceneDelegate.swift */,
 				C5AAAF812B7A121C00095E50 /* Scenes */,
 				C5AAB0112B7A121D00095E50 /* Supporting */,
 				C5AAB00F2B7A121C00095E50 /* Views */,
@@ -763,7 +760,6 @@
 				C5AAB03B2B7A121D00095E50 /* SelectPhoneNumberView.swift in Sources */,
 				C5AAB0412B7A121D00095E50 /* UserContactsRouter.swift in Sources */,
 				C5AAB02F2B7A121D00095E50 /* BalanceTransferInteractor.swift in Sources */,
-				C5AAB0152B7A121D00095E50 /* SceneDelegate.swift in Sources */,
 				C5AAB0472B7A121D00095E50 /* TabBarWorker.swift in Sources */,
 				C5AAB01C2B7A121D00095E50 /* View+Extension.swift in Sources */,
 				C5AAB0672B7A121D00095E50 /* StoryViewController.swift in Sources */,
@@ -997,6 +993,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1004,6 +1001,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NarHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1024,6 +1025,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1031,6 +1033,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NarHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
