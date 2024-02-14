@@ -19,31 +19,38 @@ final class TabBarController: UITabBarController, ThemeableViewController {
     
     var theme: ThemeProvider = App.theme
     
-    private var middleButton: RoundedButton?
     
+    private lazy var menuButton: MenuButton = {
+        let btn = MenuButton()
+        return btn
+    }()
+
     override func loadView() {
         super.loadView()
-        self.middleButton = RoundedButton(frame: CGRect(x: Int(self.tabBar.bounds.width)/2 - 30, y: -30, width: 60, height: 60))
-        self.setupMiddleButton()
     }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        // Ensure the middle button is centered and positioned above the tab bar
-        self.middleButton!.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.minY - self.middleButton!.bounds.height / 6 + 10)
-        
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupCustomTabBar()
+        self.setupUI()
+        self.addSubviews()
+        self.addConstraints()
         self.addControllers()
     }
     
-    fileprivate func setupMiddleButton() {
-        self.tabBar.addSubview(self.middleButton!)
-        self.tabBar.bringSubviewToFront(self.middleButton!)
+    
+    private func addSubviews() {
+        self.view.addSubview(self.menuButton)
     }
+    
+    private func addConstraints() {
+        self.menuButton.snp.updateConstraints { make in
+            make.width.height.equalTo(58)
+            make.bottom.equalToSuperview().offset(-50)
+            make.centerX.equalToSuperview()
+        }
+    }
+
 
     private func addControllers() {
         let dashboardVC = DashboardViewController()
@@ -77,18 +84,14 @@ final class TabBarController: UITabBarController, ThemeableViewController {
         self.viewControllers = controllers
     }
     
-    private func setupCustomTabBar() {
-        let tabbarView = TabBarView()
-        let shape = tabbarView.setupCustomTabBar(width: Int(self.tabBar.bounds.width), height: Int(self.tabBar.bounds.height))
-        
-        self.tabBar.layer.insertSublayer(shape, at: 0)
-        self.tabBar.tintColor = adaptiveColor(.mainColor)
-        self.tabBar.unselectedItemTintColor = adaptiveColor(.labelColor)
-        self.tabBar.backgroundColor = .clear
-        self.tabBar.isTranslucent = false
-        self.tabBar.barTintColor = .white
-
+    private func setupUI() {
         self.view.backgroundColor = adaptiveColor(.bgColor)
+    }
+    
+    private func setupCustomTabBar() {
+        let tabbarView = AppTabBar()
+        self.setValue(tabbarView, forKey: "tabBar")
+
     }
     
     func doSomething() {
@@ -111,3 +114,4 @@ extension TabBarController: TabBarDisplayLogic {
     func displaySomething(viewModel: TabBar.Something.ViewModel) {
     }
 }
+

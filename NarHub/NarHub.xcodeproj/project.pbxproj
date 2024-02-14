@@ -72,7 +72,7 @@
 		C5AAB0472B7A121D00095E50 /* TabBarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA82B7A121C00095E50 /* TabBarWorker.swift */; };
 		C5AAB0482B7A121D00095E50 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFA92B7A121C00095E50 /* TabBarViewController.swift */; };
 		C5AAB0492B7A121D00095E50 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFAA2B7A121C00095E50 /* TabBarConfigurator.swift */; };
-		C5AAB04A2B7A121D00095E50 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFAD2B7A121C00095E50 /* RoundedButton.swift */; };
+		C5AAB04A2B7A121D00095E50 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFAD2B7A121C00095E50 /* MenuButton.swift */; };
 		C5AAB04B2B7A121D00095E50 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFAE2B7A121C00095E50 /* TabBarInteractor.swift */; };
 		C5AAB04C2B7A121D00095E50 /* VASModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB02B7A121C00095E50 /* VASModels.swift */; };
 		C5AAB04D2B7A121D00095E50 /* VASView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAFB12B7A121C00095E50 /* VASView.swift */; };
@@ -195,7 +195,7 @@
 		C5AAAFA82B7A121C00095E50 /* TabBarWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarWorker.swift; sourceTree = "<group>"; };
 		C5AAAFA92B7A121C00095E50 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C5AAAFAA2B7A121C00095E50 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
-		C5AAAFAD2B7A121C00095E50 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		C5AAAFAD2B7A121C00095E50 /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		C5AAAFAE2B7A121C00095E50 /* TabBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
 		C5AAAFB02B7A121C00095E50 /* VASModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASModels.swift; sourceTree = "<group>"; };
 		C5AAAFB12B7A121C00095E50 /* VASView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VASView.swift; sourceTree = "<group>"; };
@@ -503,7 +503,7 @@
 		C5AAAFAC2B7A121C00095E50 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				C5AAAFAD2B7A121C00095E50 /* RoundedButton.swift */,
+				C5AAAFAD2B7A121C00095E50 /* MenuButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -767,7 +767,7 @@
 				C5AAB04C2B7A121D00095E50 /* VASModels.swift in Sources */,
 				C5AAB03D2B7A121D00095E50 /* UserContactsInteractor.swift in Sources */,
 				C5AAB05B2B7A121D00095E50 /* DashboardWorker.swift in Sources */,
-				C5AAB04A2B7A121D00095E50 /* RoundedButton.swift in Sources */,
+				C5AAB04A2B7A121D00095E50 /* MenuButton.swift in Sources */,
 				C5AAB0202B7A121D00095E50 /* AppDelegate.swift in Sources */,
 				C5AAB08C2B7A121D00095E50 /* LargeFilledButton.swift in Sources */,
 				C5AAB02B2B7A121D00095E50 /* BalanceTransferWorker.swift in Sources */,

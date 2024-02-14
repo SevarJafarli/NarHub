@@ -8,7 +8,7 @@
 import UIKit
 import NarHubUIKit
 
-class RoundedButton: UIButton, ThemeableView {
+class MenuButton: UIButton, ThemeableView {
     var theme: ThemeProvider = App.theme
     
     //MARK: Init

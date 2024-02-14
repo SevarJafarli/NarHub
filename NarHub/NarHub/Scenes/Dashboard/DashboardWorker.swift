@@ -21,9 +21,8 @@ protocol DashboardWorkingLogic {
 }
 
 
-class DashboardWorker: DashboardWorkingLogic
-{
-    private let service =  App.service
+class DashboardWorker: DashboardWorkingLogic {
+    private let service = App.service
     
     func fetchHubServices(_ completion: @escaping (HubResponse?) -> Void) {
         service.hub.getHubServices { result in
