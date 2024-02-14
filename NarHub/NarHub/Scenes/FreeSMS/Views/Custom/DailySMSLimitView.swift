@@ -13,7 +13,7 @@ class DailySMSLimitView: UIView, ThemeableView {
     var theme: ThemeProvider = App.theme
     
     
-    private let titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         lbl.textColor = .black
@@ -27,7 +27,7 @@ class DailySMSLimitView: UIView, ThemeableView {
         return lbl
     }()
     
-    private let smsCount: UILabel = {
+    private lazy var smsCount: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         lbl.textColor = .black

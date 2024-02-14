@@ -11,7 +11,7 @@ import NarHubUIKit
 
 class SelectTransferAmountView: UIView {
   
-    private let title: UILabel = {
+    private lazy var title: UILabel = {
         let lbl = UILabel()
         lbl.text = "Köçürüləcək məbləğ"
         lbl.textColor = .black
@@ -22,7 +22,7 @@ class SelectTransferAmountView: UIView {
     lazy var transferAmountsCollectionView: TransferAmountsCollectionView = {
         let collectionView = TransferAmountsCollectionView()
         collectionView.register(TransferAmountCell.self, forCellWithReuseIdentifier: TransferAmountCell.reuseIdentifier)
-        
+    
         return collectionView
     }()
    

@@ -21,11 +21,13 @@ final class BalanceTransferViewController: UIViewController {
     private var transferAmounts: [String] = []
     var selectedAmountIndex = 0
     // MARK: - Lifecycle Methods
-
+    
     override func loadView() {
         super.loadView()
         self.view = mainView
         mainView?.delegate = self
+  
+        view.isExclusiveTouch = false
     }
     
     override func viewDidLoad() {
@@ -33,13 +35,13 @@ final class BalanceTransferViewController: UIViewController {
         self.showBackButton = true
         self.hideKeyboardWhenTappedAround()
         self.title = "Balans köçürmə"
-        
+       
         self.mainView?.selectTransferAmountView.transferAmountsCollectionView.delegate = self
         self.mainView?.selectTransferAmountView.transferAmountsCollectionView.dataSource = self
-        
         self.load()
     }
     
+ 
     // MARK: - Public Methods
     
     func load() {
@@ -55,9 +57,9 @@ final class BalanceTransferViewController: UIViewController {
 extension BalanceTransferViewController: BalanceTransferDisplayLogic {
     
     func displayTransferAmounts(viewModel: BalanceTransfer.Load.ViewModel) {
-            self.transferAmounts = viewModel.amountList
-            self.mainView?.selectTransferAmountView.transferAmountsCollectionView.reloadData()
-            self.mainView?.stopLoading()
+        self.transferAmounts = viewModel.amountList
+        self.mainView?.selectTransferAmountView.transferAmountsCollectionView.reloadData()
+        self.mainView?.stopLoading()
     }
 }
 
@@ -73,26 +75,23 @@ extension BalanceTransferViewController: UICollectionViewDelegate, UICollectionV
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TransferAmountCell.reuseIdentifier, for: indexPath) as? TransferAmountCell else {
             return UICollectionViewCell()
         }
-      
+        
         let amount = self.transferAmounts[indexPath.row]
+
         cell.configure(with: amount)
-       
+        
+        
+        cell.isButtonSelected = (indexPath.item == self.selectedAmountIndex)
         return cell
     }
     
-  
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("is deselect item ")
-        
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TransferAmountCell.reuseIdentifier, for: indexPath) as? TransferAmountCell else {
-//            return
-//        }
-//        cell.isButtonSelected = true
-//        self.selectedAmountIndex = indexPath.row
-//        print(self.selectedAmountIndex)
-        //          /*  cell.changeState(isSelected: self.selectedAmountIndex == i*/ndexPath.row)
-        //            collectionView.reloadData()
-        
+        print("select item")
+        if self.selectedAmountIndex != indexPath.item {
+            self.selectedAmountIndex = indexPath.item
+            collectionView.reloadData()
+        }
     }
 }
 
@@ -109,3 +108,4 @@ extension BalanceTransferViewController: UserContactsViewControllerDelegate {
     }
     
 }
+

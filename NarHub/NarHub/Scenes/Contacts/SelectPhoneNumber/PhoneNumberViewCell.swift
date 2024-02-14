@@ -11,13 +11,13 @@ class PhoneNumberViewCell: UITableViewCell {
 
     static var reuseIdentifier = "PhoneNumberViewCell"
     
-    lazy var phoneNumberLabel: UILabel = {
+    private lazy var phoneNumberLabel: UILabel = {
         let lbl = UILabel()
         lbl.textColor = .black
         return lbl
     }()
     
-    lazy var chooseButton: UIImageView = {
+    private lazy var chooseButton: UIImageView = {
         let imageView = UIImageView()
         var image = UIImage(systemName: "chevron.forward")!
         image = image.withTintColor(.darkGray, renderingMode: .alwaysOriginal)

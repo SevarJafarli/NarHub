@@ -11,29 +11,28 @@ import NarHubUIKit
 class UserContactsViewCell: UITableViewCell, ThemeableView {
     var theme: ThemeProvider = App.theme
     
-    
     static var reuseIdentifier = "UserContactsViewCell"
     
-    private let backView: UIView = {
+    private lazy var backView: UIView = {
         let view = UIView()
         return view
     }()
     
-    lazy var contactName: UILabel = {
+    private lazy var contactName: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         lbl.textColor = .black
         return lbl
     }()
     
-    lazy var contactPhoneNumber: UILabel = {
+    private lazy var contactPhoneNumber: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         lbl.textColor = .black
         return lbl
     }()
     
-    lazy var contactInitialView: UIView = {
+    private lazy var contactInitialView: UIView = {
         let view = UIView()
         view.backgroundColor = adaptiveColor(.selectedBtnColor)
         view.layer.cornerRadius = 15
@@ -42,7 +41,7 @@ class UserContactsViewCell: UITableViewCell, ThemeableView {
         return view
     }()
     
-    lazy var contactInitialLabel: UILabel = {
+    private lazy var contactInitialLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         lbl.textColor = adaptiveColor(.mainColor)
@@ -108,6 +107,7 @@ class UserContactsViewCell: UITableViewCell, ThemeableView {
         self.contactInitialLabel.text = "\(nameInitial)\(surnameInitial)"
         self.contactName.text = "\(model.firstName) \(model.lastName)"
         var contactPhoneNumberText = ""
+        
         if model.phoneNumbers.count > 1 {
             contactPhoneNumberText = "\(model.phoneNumbers.first!) and \(model.phoneNumbers.count - 1) more"
         }

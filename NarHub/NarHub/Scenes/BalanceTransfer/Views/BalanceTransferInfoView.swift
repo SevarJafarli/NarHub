@@ -12,7 +12,7 @@ class BalanceTransferInfoView: UIView, ThemeableView {
     var theme: ThemeProvider = App.theme
     
     
-    private let infoText: UILabel = {
+    private lazy var infoText: UILabel = {
         let lbl = UILabel()
         lbl.text = "“Balans köçürmə” xidmətindən istifadə etməklə sən öz balansından istənilən Nar abunəçisinin balansına 0.2, 0.5, 1 və ya 2 AZN məbləğində balans köçürə bilərsən."
         lbl.numberOfLines = 0

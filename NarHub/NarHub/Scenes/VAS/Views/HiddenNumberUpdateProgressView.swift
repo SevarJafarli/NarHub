@@ -9,17 +9,18 @@ import UIKit
 import NarHubUIKit
 
 class HiddenNumberUpdateProgressView: UIView, ThemeableView {
+    
     var theme: ThemeProvider = App.theme
     
     
-    lazy var title: UILabel = {
+    private lazy var title: UILabel = {
         let lbl = UILabel()
         lbl.textColor = .black
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         return lbl
     }()
     
-    lazy var numberOfDays: UILabel = {
+    private lazy var numberOfDays: UILabel = {
         let lbl = UILabel()
         lbl.textColor = adaptiveColor(.darkGrayLabelColor)
         lbl.font = AppFonts.boldBodySize14.fontStyle
@@ -27,19 +28,19 @@ class HiddenNumberUpdateProgressView: UIView, ThemeableView {
         return lbl
     }()
     
-    lazy var nextUpdateDateLabel: UILabel = {
+    private lazy var nextUpdateDateLabel: UILabel = {
         let lbl = UILabel()
         lbl.textColor = UIColor.black
         lbl.font = AppFonts.regularBodySize14.fontStyle
         return lbl
     }()
     
-    lazy var progressBar: UIProgressView = {
-        let view = UIProgressView()
-        view.progressTintColor = adaptiveColor(.mainColor)
-        view.trackTintColor = adaptiveColor(.labelColor)
+    private lazy var trackerView: VASTrackerView = {
+        let view = VASTrackerView()
         return view
     }()
+    
+    
     //MARK: Init
     
     override init(frame: CGRect) {
@@ -54,7 +55,7 @@ class HiddenNumberUpdateProgressView: UIView, ThemeableView {
     private func addSubviews() {
         self.addSubview(self.title)
         self.addSubview(self.numberOfDays)
-        self.addSubview(self.progressBar)
+        self.addSubview(self.trackerView)
         self.addSubview(self.nextUpdateDateLabel)
     }
     
@@ -62,14 +63,14 @@ class HiddenNumberUpdateProgressView: UIView, ThemeableView {
         
         self.title.snp.updateConstraints { make in
             make.top.leading.equalToSuperview()
-            make.bottom.equalTo(self.progressBar.snp.top).offset(-16)
+            make.bottom.equalTo(self.trackerView.snp.top).offset(-16)
         }
         self.numberOfDays.snp.updateConstraints { make in
             make.top.trailing.equalToSuperview()
             make.leading.equalTo(self.title.snp.trailing).offset(16)
-            make.bottom.equalTo(self.progressBar.snp.top).offset(-16)
+            make.bottom.equalTo(self.trackerView.snp.top).offset(-16)
         }
-        self.progressBar.snp.updateConstraints { make in
+        self.trackerView.snp.updateConstraints { make in
             make.leading.trailing.equalToSuperview()
             make.bottom.equalTo(self.nextUpdateDateLabel.snp.top).offset(-16)
         }
@@ -92,6 +93,6 @@ class HiddenNumberUpdateProgressView: UIView, ThemeableView {
 //        let progress: Float = 1.0 - Float(numberOfDaysLeftToReneweal) / Float(30)
        
         print("progress \(progress)")
-        self.progressBar.setProgress(Float(progress), animated: true)
+        self.trackerView.setProgress(Float(progress), animated: true)
     }
 }

@@ -119,7 +119,7 @@ extension MainNavigation: UINavigationControllerDelegate {
     }
 }
 
-extension MainNavigation: UIGestureRecognizerDelegate {
+extension MainNavigation {
     
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         return viewControllers.count > 1

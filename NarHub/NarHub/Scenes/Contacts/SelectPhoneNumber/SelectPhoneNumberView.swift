@@ -20,7 +20,7 @@ class SelectPhoneNumberView: UIView {
     }
 
     
-    private let tableHeaderLabel: UILabel = {
+    private lazy var tableHeaderLabel: UILabel = {
         let lbl = UILabel()
         lbl.text = "Choose number"
         lbl.font = AppFonts.boldTitleSize18.fontStyle

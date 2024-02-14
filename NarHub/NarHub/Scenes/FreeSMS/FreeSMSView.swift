@@ -23,25 +23,25 @@ class FreeSMSView: UIView, ThemeableView {
     
     var theme: ThemeProvider = App.theme
     
-    lazy var scrollView: UIScrollView = {
+    private lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsVerticalScrollIndicator = false
         return view
     }()
     
-    lazy var contentView: UIView = {
+    private lazy var contentView: UIView = {
         let view = UIView()
         return view
     }()
     
-    lazy var contentHStackView: UIStackView = {
+    private lazy var contentHStackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
         view.spacing = 8
         return view
     }()
     
-    lazy var loadingIndicator: LoadingActivityIndicator = {
+    private lazy var loadingIndicator: LoadingActivityIndicator = {
         let indicator = LoadingActivityIndicator()
         return indicator
     }()
@@ -52,7 +52,7 @@ class FreeSMSView: UIView, ThemeableView {
         return view
     }()
     
-    lazy var messageTitleLabel: UILabel = {
+    private lazy var messageTitleLabel: UILabel = {
         let lbl = UILabel()
         lbl.text = "Mesaj"
         lbl.font = AppFonts.boldTitleSize18.fontStyle
@@ -73,7 +73,7 @@ class FreeSMSView: UIView, ThemeableView {
         return view
     }()
     
-    lazy var sendButton: LargeFilledButton = {
+     lazy var sendButton: LargeFilledButton = {
         let btn = LargeFilledButton(isButtonEnabled: false, title: "Göndər")
         btn.delegate = self
         return btn
@@ -150,6 +150,7 @@ extension FreeSMSView: PhoneNumberTextFieldViewDelegate {
         self.delegate?.openContacts()
     }
 }
+
 //MARK: MessageTextViewDelegate
 
 extension FreeSMSView: MessageTextViewDelegate {
@@ -180,11 +181,8 @@ extension FreeSMSView: LargeFilledButtonDelegate {
     }
     
     func updateSendButtonState() {
-        if let
-            phoneNumber = self.phoneNumberTextField.phoneTextField.text,
-           !phoneNumber.isEmpty, phoneNumber.checkPhoneNumber(),
-           let messageText = self.messageTextView.textView.text,
-           !messageText.isEmpty
+        if let phoneNumber = self.phoneNumberTextField.phoneTextField.text, !phoneNumber.isEmpty, phoneNumber.checkPhoneNumber(),
+           let messageText = self.messageTextView.textView.text, !messageText.isEmpty
         {
             sendButton.changeButtonState(isEnabled: true)
         } else {

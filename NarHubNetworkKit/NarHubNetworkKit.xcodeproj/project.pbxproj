@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5815B262B7A8F2D0018DF32 /* HubObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5815B252B7A8F2D0018DF32 /* HubObjectModel.swift */; };
-		C5815B2E2B7B313C0018DF32 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C5815B2D2B7B313C0018DF32 /* Realm */; };
-		C5815B302B7B313C0018DF32 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5815B2F2B7B313C0018DF32 /* RealmSwift */; };
-		C5815B312B7B3A0F0018DF32 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5815B222B7A8E5E0018DF32 /* CacheManager.swift */; };
+		C5815B412B7B82DC0018DF32 /* NarHubNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C5815B402B7B82DC0018DF32 /* NarHubNetworkKit.h */; };
 		C5AAADF12B7A0CA100095E50 /* FreeSMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADD72B7A0CA100095E50 /* FreeSMSService.swift */; };
 		C5AAADF22B7A0CA100095E50 /* FreeSMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADD82B7A0CA100095E50 /* FreeSMS.swift */; };
 		C5AAADF32B7A0CA100095E50 /* FreeSMSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADD92B7A0CA100095E50 /* FreeSMSAPI.swift */; };
@@ -37,8 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C5815B222B7A8E5E0018DF32 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
-		C5815B252B7A8F2D0018DF32 /* HubObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubObjectModel.swift; sourceTree = "<group>"; };
+		C5815B402B7B82DC0018DF32 /* NarHubNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NarHubNetworkKit.h; sourceTree = "<group>"; };
 		C5AAAD892B7A0C0500095E50 /* NarHubNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NarHubNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AAADD72B7A0CA100095E50 /* FreeSMSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSService.swift; sourceTree = "<group>"; };
 		C5AAADD82B7A0CA100095E50 /* FreeSMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMS.swift; sourceTree = "<group>"; };
@@ -69,8 +65,6 @@
 			files = (
 				C5AAAF592B7A113200095E50 /* RxMoya in Frameworks */,
 				C5AAAF552B7A113200095E50 /* Moya in Frameworks */,
-				C5815B2E2B7B313C0018DF32 /* Realm in Frameworks */,
-				C5815B302B7B313C0018DF32 /* RealmSwift in Frameworks */,
 				C5AAAF572B7A113200095E50 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,26 +112,10 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
-		C5815B212B7A8DF20018DF32 /* CacheManager */ = {
-			isa = PBXGroup;
-			children = (
-				C5815B242B7A8F1C0018DF32 /* Models */,
-				C5815B222B7A8E5E0018DF32 /* CacheManager.swift */,
-			);
-			path = CacheManager;
-			sourceTree = "<group>";
-		};
-		C5815B242B7A8F1C0018DF32 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C5815B252B7A8F2D0018DF32 /* HubObjectModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		C5AAAD7F2B7A0C0500095E50 = {
 			isa = PBXGroup;
 			children = (
+				C5815B402B7B82DC0018DF32 /* NarHubNetworkKit.h */,
 				C5AAAD8B2B7A0C0500095E50 /* NarHubNetworkKit */,
 				C5AAAD8A2B7A0C0500095E50 /* Products */,
 			);
@@ -154,7 +132,6 @@
 		C5AAAD8B2B7A0C0500095E50 /* NarHubNetworkKit */ = {
 			isa = PBXGroup;
 			children = (
-				C5815B212B7A8DF20018DF32 /* CacheManager */,
 				C5AAADEF2B7A0CA100095E50 /* Connectivity */,
 				C5815B1D2B7A8D0D0018DF32 /* Network */,
 			);
@@ -234,6 +211,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5815B412B7B82DC0018DF32 /* NarHubNetworkKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +236,6 @@
 				C5AAAF542B7A113200095E50 /* Moya */,
 				C5AAAF562B7A113200095E50 /* ReactiveMoya */,
 				C5AAAF582B7A113200095E50 /* RxMoya */,
-				C5815B2D2B7B313C0018DF32 /* Realm */,
-				C5815B2F2B7B313C0018DF32 /* RealmSwift */,
 			);
 			productName = NarHubNetworkKit;
 			productReference = C5AAAD892B7A0C0500095E50 /* NarHubNetworkKit.framework */;
@@ -290,7 +266,6 @@
 			mainGroup = C5AAAD7F2B7A0C0500095E50;
 			packageReferences = (
 				C5AAAF532B7A113200095E50 /* XCRemoteSwiftPackageReference "Moya" */,
-				C5815B2C2B7B313C0018DF32 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = C5AAAD8A2B7A0C0500095E50 /* Products */;
 			projectDirPath = "";
@@ -316,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5815B312B7B3A0F0018DF32 /* CacheManager.swift in Sources */,
 				C5AAADF72B7A0CA100095E50 /* BalanceTransferService.swift in Sources */,
 				C5AAADF52B7A0CA100095E50 /* Hub.swift in Sources */,
 				C5AAADFA2B7A0CA100095E50 /* VAS.swift in Sources */,
@@ -334,7 +308,6 @@
 				C5AAADFD2B7A0CA100095E50 /* StoryService.swift in Sources */,
 				C5AAADFB2B7A0CA100095E50 /* VASAPI.swift in Sources */,
 				C5AAADF22B7A0CA100095E50 /* FreeSMS.swift in Sources */,
-				C5815B262B7A8F2D0018DF32 /* HubObjectModel.swift in Sources */,
 				C5AAAE012B7A0CA100095E50 /* Result.swift in Sources */,
 				C5AAADF62B7A0CA100095E50 /* HubService.swift in Sources */,
 				C5AAADF92B7A0CA100095E50 /* BalanceTransferAPI.swift in Sources */,
@@ -561,14 +534,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C5815B2C2B7B313C0018DF32 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.46.0;
-			};
-		};
 		C5AAAF532B7A113200095E50 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -580,16 +545,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C5815B2D2B7B313C0018DF32 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C5815B2C2B7B313C0018DF32 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		C5815B2F2B7B313C0018DF32 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C5815B2C2B7B313C0018DF32 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 		C5AAAF542B7A113200095E50 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C5AAAF532B7A113200095E50 /* XCRemoteSwiftPackageReference "Moya" */;

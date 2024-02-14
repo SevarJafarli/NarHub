@@ -43,21 +43,27 @@ public extension UIView {
     }
 }
 
-extension UIViewController {
-    
-    func hideKeyboardWhenTappedAround() {
-        let tapGesture = UITapGestureRecognizer(target: self,
-                         action: #selector(hideKeyboard))
-        view.addGestureRecognizer(tapGesture)
-    }
+//MARK: UIGestureRecognizerDelegate
 
+extension UIViewController: UIGestureRecognizerDelegate {
+    func hideKeyboardWhenTappedAround() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        tapGesture.delegate = self
+        tapGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture)
+        
+    }
+    
     @objc func hideKeyboard() {
         view.endEditing(true)
+    }
+    ///enable recognize multiple gestures at the same time
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
 }
 
 final class BindableGestureRecognizer: UITapGestureRecognizer {
-    
     private var action: () -> Void
 
     init(action: @escaping () -> Void) {
@@ -87,6 +93,7 @@ extension UIView {
 
 extension UIViewController {
     func showBottomUp(_ alertView: UIViewController, sizes: [SheetSize] = [.intrinsic] ) {
+        
         var options = SheetOptions()
         options.pullBarHeight = 0
         options.useInlineMode = false

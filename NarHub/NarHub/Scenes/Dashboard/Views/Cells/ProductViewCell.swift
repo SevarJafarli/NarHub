@@ -11,21 +11,21 @@ import NarHubUIKit
 class ProductViewCell: UIView {
     let productType: ProductType
     
-    private let cardView: UIView = {
+    private lazy var cardView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.cornerRadius = 16
         return view
     }()
     
-    private let productLabel: UILabel = {
+    private lazy var productLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldBodySize14.fontStyle
         lbl.textColor = .black
         return lbl
     }()
     
-    private let productImageView: UIImageView = {
+    private lazy var productImageView: UIImageView = {
         let imgView = UIImageView()
         imgView.clipsToBounds = true
         return imgView

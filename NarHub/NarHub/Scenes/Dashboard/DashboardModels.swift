@@ -12,6 +12,7 @@
 
 import UIKit
 import NarHubNetworkKit
+import RealmSwift
 
 enum Dashboard {
     // MARK: Use cases
@@ -78,10 +79,20 @@ extension ProductType {
 
 //MARK: HubModel
 
-struct HubModel {
-    let title: String
-    let id: Int
+public class HubModel: Object {
+   @Persisted var title: String = ""
+   @Persisted var id: Int = 0
+
+   public convenience init(title: String, id: Int) {
+       self.init()
+       self.title = title
+       self.id = id
+   }
+    static func == (lhs: HubModel, rhs: HubModel) -> Bool {
+           return lhs.title == rhs.title
+    }
 }
+
 
 extension HubModel {
     var image : UIImage? {

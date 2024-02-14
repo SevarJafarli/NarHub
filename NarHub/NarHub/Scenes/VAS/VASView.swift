@@ -13,17 +13,17 @@ final class VASView: UIView, ThemeableView {
     var theme: ThemeProvider = App.theme
     
     
-    lazy var scrollView: UIScrollView = {
+    private lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
         return view
     }()
     
-    lazy var contentView: UIView = {
+    private lazy var contentView: UIView = {
         let view = UIView()
         return view
     }()
     
-    lazy var contentVStackView: UIStackView = {
+    private lazy var contentVStackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
         view.spacing = 8
@@ -32,7 +32,7 @@ final class VASView: UIView, ThemeableView {
         return view
     }()
     
-    lazy var loadingIndicator: LoadingActivityIndicator = {
+    private lazy var loadingIndicator: LoadingActivityIndicator = {
         let indicator = LoadingActivityIndicator()
         return indicator
     }()

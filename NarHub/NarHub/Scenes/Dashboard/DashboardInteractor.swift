@@ -12,6 +12,7 @@
 
 import UIKit
 import NarHubNetworkKit
+import RealmSwift
 
 protocol DashboardBusinessLogic {
     func fetchStories(request: Dashboard.FetchStories.Request)
@@ -30,6 +31,7 @@ class DashboardInteractor: DashboardBusinessLogic, DashboardDataStore {
     var presenter: DashboardPresentationLogic?
     lazy var worker: DashboardWorkingLogic = DashboardWorker()
     
+    
     var hubServices: HubResponse?
     var stories: StoriesResponse?
     
@@ -46,30 +48,45 @@ class DashboardInteractor: DashboardBusinessLogic, DashboardDataStore {
     }
     
     func fetchHubs(request: Dashboard.FetchHubs.Request) {
+        let hubModelsFromCache: Results<HubModel> = CacheManager.shared.readData()
+        let hubModelsArray: [HubModel] = Array(hubModelsFromCache)
+
+    
+        guard Connectivity.isConnectedToInternet() else {
+            var hubServices = [Hub]()
+            for hub in hubModelsArray {
+                hubServices.append(Hub(id: hub.id, title: hub.title))
+            }
+            
+            let data = HubResponse(list: hubServices)
+            let response = Dashboard.FetchHubs.Response(hubServices: data)
+            self.presenter?.presentHubServices(response: response)
+            return
+        }
         
         worker.fetchHubServices({ [weak self] data in
             guard let self = self else { return }
-            
+       
             if let data = data {
                 self.hubServices = data
-                
-                var hubModels = [HubObjectModel]()
+                var hubArray = [HubModel]()
                 
                 if let hubList = self.hubServices?.list {
+                   
                     for hub in hubList {
-                        hubModels.append(HubObjectModel(title: hub.title ?? "", id: hub.id ?? 0))
+                        let hubModel = HubModel(title: hub.title ?? "", id: hub.id ?? 0)
+                        hubArray.append(hubModel)
+                        if hubArray != hubModelsArray {
+                            CacheManager.shared.saveData(data: hubModel)
+                        }
                     }
                 }
-                //
-                //                CacheManager.shared.saveHubModels(hubModels: hubModels)
-                print("Savedhubmodels to cache")
-                print(hubModels)
+            
                 let response = Dashboard.FetchHubs.Response(hubServices: data)
                 self.presenter?.presentHubServices(response: response)
             }
         })
     }
-    
     
     func load(request: Dashboard.Load.Request) {
         let response = Dashboard.Load.Response()

@@ -28,7 +28,7 @@ final class BalanceTransferView: UIView, ThemeableView {
         return view
     }()
     
-    lazy var loadingIndicator: LoadingActivityIndicator = {
+    private lazy var loadingIndicator: LoadingActivityIndicator = {
         let indicator = LoadingActivityIndicator()
         return indicator
     }()
@@ -47,7 +47,7 @@ final class BalanceTransferView: UIView, ThemeableView {
         return label
     }()
     
-    lazy var transferButton: LargeFilledButton = {
+    private lazy var transferButton: LargeFilledButton = {
         let btn = LargeFilledButton(isButtonEnabled: false, title: "Köçür")
         btn.delegate = self
         return btn

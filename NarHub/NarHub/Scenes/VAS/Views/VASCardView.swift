@@ -14,14 +14,14 @@ class VASCardView: UIView, ThemeableView {
     
     let vasModel: VASCardModel
     
-    lazy var titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         lbl.textColor = .black
         return lbl
     }()
     
-    lazy var subtitleLabel: UILabel  = {
+    private lazy var subtitleLabel: UILabel  = {
         let lbl = UILabel()
         lbl.font = AppFonts.regularBodySize14.fontStyle
         lbl.textColor = .black
@@ -30,21 +30,19 @@ class VASCardView: UIView, ThemeableView {
         return lbl
     }()
     
-    lazy var vasSwitch: UISwitch = {
-        let vasSwitch = UISwitch()
-        vasSwitch.isOn = true
-        vasSwitch.onTintColor = adaptiveColor(.mainColor)
+    private lazy var vasSwitch: VASSwitch = {
+        let vasSwitch = VASSwitch()
         return vasSwitch
     }()
     
-    lazy var serviceDateLabel: UILabel = {
+    private lazy var serviceDateLabel: UILabel = {
         let lbl = UILabel()
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         lbl.textColor = .black
         return lbl
     }()
     
-    lazy var hiddenNumberUpdateProgressView: HiddenNumberUpdateProgressView = {
+    private lazy var hiddenNumberUpdateProgressView: HiddenNumberUpdateProgressView = {
         let view = HiddenNumberUpdateProgressView()
         return view
     }()

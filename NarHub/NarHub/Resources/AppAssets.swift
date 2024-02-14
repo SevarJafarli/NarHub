@@ -9,6 +9,7 @@
 import UIKit
 
 public enum AppAssets: String, CaseIterable {
+    
     case account
     case balance_transfer
     case credit

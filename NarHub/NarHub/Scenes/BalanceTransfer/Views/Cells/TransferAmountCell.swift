@@ -10,24 +10,23 @@ import NarHubUIKit
 
 
 class TransferAmountCell: UICollectionViewCell, ThemeableView {
-    var theme: ThemeProvider  = App.theme
+    var theme: ThemeProvider = App.theme
     
     static var reuseIdentifier = "TransferAmountCell"
-
     
-    lazy var titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let lbl = UILabel()
         lbl.textColor = .black
         lbl.font = AppFonts.boldTitleSize18.fontStyle
         return lbl
     }()
     
-    //for testing whether button tapping is working
     var isButtonSelected: Bool? {
         didSet {
-            self.contentView.backgroundColor = .red
+            updateAppearance()
         }
     }
+    
     fileprivate func configureContentView() {
         self.contentView.backgroundColor = UIColor.white
         self.contentView.layer.cornerRadius = 28
@@ -59,18 +58,24 @@ class TransferAmountCell: UICollectionViewCell, ThemeableView {
         }
     }
     
+    
+    private func updateAppearance() {
+        if let isSelected = isButtonSelected {
+            self.contentView.backgroundColor = isSelected ? adaptiveColor(.selectedBtnColor) : UIColor.white
+            self.contentView.layer.borderColor = isSelected ? adaptiveColor(.mainColor).cgColor : UIColor.white.cgColor
+            self.titleLabel.textColor = isSelected ? adaptiveColor(.mainColor) : .black
+            
+        } else {
+            self.contentView.backgroundColor = UIColor.white
+            self.contentView.layer.borderColor = UIColor.white.cgColor
+            self.titleLabel.textColor = .black
+        }
+    }
+    
+    
     //MARK: Public
     
     public func configure(with transferAmount: String) {
         self.titleLabel.text = "\(transferAmount) ₼ "
-    }
-    
-    public func changeState(isSelected: Bool) {
-        print("Change state")
-        
-        self.contentView.backgroundColor = self.isSelected ? adaptiveColor(.selectedBtnColor) :  .white
-        self.contentView.layer.borderColor = isSelected ? adaptiveColor(.mainColor).cgColor : UIColor.white.cgColor
-        
-        self.titleLabel.textColor = self.isSelected ? adaptiveColor(.mainColor) : .black
     }
 }

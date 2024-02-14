@@ -8,8 +8,8 @@
 import Foundation
 import Alamofire
 
-final class Connectivity {
-    class func isConnectedToInternet() -> Bool {
+public final class Connectivity {
+    public class func isConnectedToInternet() -> Bool {
         return NetworkReachabilityManager()?.isReachable ?? false
     }
 }

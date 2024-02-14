@@ -17,6 +17,7 @@ final class UserContactsView: UIView {
     
     var contactsByInitial: [String: [UserContactModel]] = [:]
     var sectionTitles: [String] = []
+    
     lazy var contactsTableView: UITableView = {
         let view = UITableView(frame: .zero, style: .grouped)
         view.register(UserContactsViewCell.self, forCellReuseIdentifier: UserContactsViewCell.reuseIdentifier)

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5815B442B7B848C0018DF32 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C5815B432B7B848C0018DF32 /* Realm */; };
+		C5815B462B7B848C0018DF32 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5815B452B7B848C0018DF32 /* RealmSwift */; };
+		C5815B4C2B7B85470018DF32 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5815B4B2B7B85470018DF32 /* CacheManager.swift */; };
+		C5815B522B7C9C330018DF32 /* VASTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5815B512B7C9C330018DF32 /* VASTrackerView.swift */; };
+		C5815B542B7C9CDB0018DF32 /* VASSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5815B532B7C9CDB0018DF32 /* VASSwitch.swift */; };
 		C5AAAF4D2B7A0D6E00095E50 /* NarHubNetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AAAF4C2B7A0D6E00095E50 /* NarHubNetworkKit.framework */; };
 		C5AAAF4E2B7A0D6E00095E50 /* NarHubNetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5AAAF4C2B7A0D6E00095E50 /* NarHubNetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5AAAF512B7A0D7100095E50 /* NarHubUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AAAF502B7A0D7100095E50 /* NarHubUIKit.framework */; };
@@ -131,6 +136,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C5815B4B2B7B85470018DF32 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		C5815B502B7C92950018DF32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5815B512B7C9C330018DF32 /* VASTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VASTrackerView.swift; sourceTree = "<group>"; };
+		C5815B532B7C9CDB0018DF32 /* VASSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VASSwitch.swift; sourceTree = "<group>"; };
 		C5AAAD682B7A0BD200095E50 /* NarHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NarHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AAAF4C2B7A0D6E00095E50 /* NarHubNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NarHubNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AAAF502B7A0D7100095E50 /* NarHubUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NarHubUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,7 +241,6 @@
 		C5AAB0062B7A121C00095E50 /* FreeSMSModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeSMSModels.swift; sourceTree = "<group>"; };
 		C5AAB0102B7A121C00095E50 /* LoadingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingActivityIndicator.swift; sourceTree = "<group>"; };
 		C5AAB0132B7A121D00095E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C5AAB0142B7A121D00095E50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +248,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5815B462B7B848C0018DF32 /* RealmSwift in Frameworks */,
+				C5815B442B7B848C0018DF32 /* Realm in Frameworks */,
 				C5AAAF5C2B7A115300095E50 /* SDWebImage in Frameworks */,
 				C5AAAF4D2B7A0D6E00095E50 /* NarHubNetworkKit.framework in Frameworks */,
 				C5AAAF5E2B7A115300095E50 /* SDWebImageMapKit in Frameworks */,
@@ -256,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				C5AAAD6A2B7A0BD200095E50 /* NarHub */,
+				C5815B502B7C92950018DF32 /* Info.plist */,
 				C5AAAD692B7A0BD200095E50 /* Products */,
 				C5AAAF4B2B7A0D6E00095E50 /* Frameworks */,
 			);
@@ -333,6 +344,7 @@
 			children = (
 				C5AAAF782B7A121C00095E50 /* LocalStorageManager.swift */,
 				C5AAAF792B7A121C00095E50 /* ContactsManager.swift */,
+				C5815B4B2B7B85470018DF32 /* CacheManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -387,8 +399,8 @@
 				C5AAAF872B7A121C00095E50 /* BalanceTransferConfigurator.swift */,
 				C5AAAF882B7A121C00095E50 /* BalanceTransferInteractor.swift */,
 				C5AAAF892B7A121C00095E50 /* BalanceTransferPresenter.swift */,
-				C5AAAF8A2B7A121C00095E50 /* Views */,
 				C5AAAF932B7A121C00095E50 /* BalanceTransferViewController.swift */,
+				C5AAAF8A2B7A121C00095E50 /* Views */,
 			);
 			path = BalanceTransfer;
 			sourceTree = "<group>";
@@ -435,13 +447,13 @@
 				C5AAAF952B7A121C00095E50 /* UserContactsView.swift */,
 				C5AAAF962B7A121C00095E50 /* UserContactsConfigurator.swift */,
 				C5AAAF972B7A121C00095E50 /* UserContactsPresenter.swift */,
-				C5AAAF982B7A121C00095E50 /* SelectPhoneNumber */,
 				C5AAAF9C2B7A121C00095E50 /* UserContactsInteractor.swift */,
 				C5AAAF9D2B7A121C00095E50 /* UserContactsViewController.swift */,
 				C5AAAF9E2B7A121C00095E50 /* UserContactsModels.swift */,
-				C5AAAF9F2B7A121C00095E50 /* Views */,
 				C5AAAFA12B7A121C00095E50 /* UserContactsRouter.swift */,
 				C5AAAFA22B7A121C00095E50 /* UserContactsWorker.swift */,
+				C5AAAF9F2B7A121C00095E50 /* Views */,
+				C5AAAF982B7A121C00095E50 /* SelectPhoneNumber */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -474,8 +486,8 @@
 				C5AAAFA82B7A121C00095E50 /* TabBarWorker.swift */,
 				C5AAAFA92B7A121C00095E50 /* TabBarViewController.swift */,
 				C5AAAFAA2B7A121C00095E50 /* TabBarConfigurator.swift */,
-				C5AAAFAB2B7A121C00095E50 /* Views */,
 				C5AAAFAE2B7A121C00095E50 /* TabBarInteractor.swift */,
+				C5AAAFAB2B7A121C00095E50 /* Views */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -517,6 +529,8 @@
 			children = (
 				C5AAAFB72B7A121C00095E50 /* HiddenNumberUpdateProgressView.swift */,
 				C5AAAFB82B7A121C00095E50 /* VASCardView.swift */,
+				C5815B512B7C9C330018DF32 /* VASTrackerView.swift */,
+				C5815B532B7C9CDB0018DF32 /* VASSwitch.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -591,15 +605,15 @@
 			isa = PBXGroup;
 			children = (
 				C5AAAFF52B7A121C00095E50 /* FreeSMSView.swift */,
-				C5AAAFF62B7A121C00095E50 /* Extensions */,
 				C5AAAFF82B7A121C00095E50 /* FreeSMSInteractor.swift */,
 				C5AAAFF92B7A121C00095E50 /* FreeSMSConfigurator.swift */,
 				C5AAAFFA2B7A121C00095E50 /* FreeSMSRouter.swift */,
 				C5AAAFFB2B7A121C00095E50 /* FreeSMSViewController.swift */,
 				C5AAAFFC2B7A121C00095E50 /* FreeSMSWorker.swift */,
-				C5AAAFFD2B7A121C00095E50 /* Views */,
 				C5AAB0052B7A121C00095E50 /* FreeSMSPresenter.swift */,
 				C5AAB0062B7A121C00095E50 /* FreeSMSModels.swift */,
+				C5AAAFF62B7A121C00095E50 /* Extensions */,
+				C5AAAFFD2B7A121C00095E50 /* Views */,
 			);
 			path = FreeSMS;
 			sourceTree = "<group>";
@@ -659,7 +673,6 @@
 			isa = PBXGroup;
 			children = (
 				C5AAB0122B7A121D00095E50 /* LaunchScreen.storyboard */,
-				C5AAB0142B7A121D00095E50 /* Info.plist */,
 			);
 			name = Supporting;
 			path = "../../../../Downloads/Nar_Hub-main/Nar_Hub/Supporting";
@@ -687,6 +700,8 @@
 				C5AAAF5D2B7A115300095E50 /* SDWebImageMapKit */,
 				C5AAAF602B7A117300095E50 /* SnapKit */,
 				C5AAAF632B7A11A600095E50 /* FittedSheets */,
+				C5815B432B7B848C0018DF32 /* Realm */,
+				C5815B452B7B848C0018DF32 /* RealmSwift */,
 			);
 			productName = NarHub;
 			productReference = C5AAAD682B7A0BD200095E50 /* NarHub.app */;
@@ -721,6 +736,7 @@
 				C5AAAF5A2B7A115300095E50 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				C5AAAF5F2B7A117300095E50 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C5AAAF622B7A11A600095E50 /* XCRemoteSwiftPackageReference "FittedSheets" */,
+				C5815B422B7B848C0018DF32 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = C5AAAD692B7A0BD200095E50 /* Products */;
 			projectDirPath = "";
@@ -770,6 +786,7 @@
 				C5AAB01B2B7A121D00095E50 /* TextFieldFormatter.swift in Sources */,
 				C5AAB0292B7A121D00095E50 /* ThemeableViewController.swift in Sources */,
 				C5AAB0912B7A121D00095E50 /* FreeSMSModels.swift in Sources */,
+				C5815B522B7C9C330018DF32 /* VASTrackerView.swift in Sources */,
 				C5AAB0882B7A121D00095E50 /* FreeSMSConfigurator.swift in Sources */,
 				C5AAB0612B7A121D00095E50 /* ProductViewCell.swift in Sources */,
 				C5AAB0592B7A121D00095E50 /* DashboardPresenter.swift in Sources */,
@@ -796,6 +813,7 @@
 				C5AAB0892B7A121D00095E50 /* FreeSMSRouter.swift in Sources */,
 				C5AAB0272B7A121D00095E50 /* ViewController+Navigation.swift in Sources */,
 				C5AAB0512B7A121D00095E50 /* VASViewController.swift in Sources */,
+				C5815B4C2B7B85470018DF32 /* CacheManager.swift in Sources */,
 				C5AAB0342B7A121D00095E50 /* BalanceTransferInfoView.swift in Sources */,
 				C5AAB0402B7A121D00095E50 /* UserContactsViewCell.swift in Sources */,
 				C5AAB04B2B7A121D00095E50 /* TabBarInteractor.swift in Sources */,
@@ -844,6 +862,7 @@
 				C5AAB05C2B7A121D00095E50 /* DashboardRouter.swift in Sources */,
 				C5AAB0632B7A121D00095E50 /* ProductCollectionView.swift in Sources */,
 				C5AAB0182B7A121D00095E50 /* DoubleFormatter.swift in Sources */,
+				C5815B542B7C9CDB0018DF32 /* VASSwitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1067,6 +1086,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C5815B422B7B848C0018DF32 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.46.0;
+			};
+		};
 		C5AAAF5A2B7A115300095E50 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -1094,6 +1121,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C5815B432B7B848C0018DF32 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5815B422B7B848C0018DF32 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C5815B452B7B848C0018DF32 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5815B422B7B848C0018DF32 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		C5AAAF5B2B7A115300095E50 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C5AAAF5A2B7A115300095E50 /* XCRemoteSwiftPackageReference "SDWebImage" */;
