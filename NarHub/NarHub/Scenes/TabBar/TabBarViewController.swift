@@ -19,6 +19,10 @@ final class TabBarController: UITabBarController, ThemeableViewController {
     
     var theme: ThemeProvider = App.theme
     
+    private lazy var tabbarView : AppTabBar = {
+        let view = AppTabBar()
+        return view
+    }()
     
     private lazy var menuButton: MenuButton = {
         let btn = MenuButton()
@@ -40,7 +44,7 @@ final class TabBarController: UITabBarController, ThemeableViewController {
     
     
     private func addSubviews() {
-        self.view.addSubview(self.menuButton)
+        self.tabBar.addSubview(self.menuButton)
     }
     
     private func addConstraints() {
@@ -89,9 +93,7 @@ final class TabBarController: UITabBarController, ThemeableViewController {
     }
     
     private func setupCustomTabBar() {
-        let tabbarView = AppTabBar()
         self.setValue(tabbarView, forKey: "tabBar")
-
     }
     
     func doSomething() {
@@ -106,6 +108,7 @@ extension TabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         return tabBarController.selectedIndex != 2
     }
+
 }
 
 
